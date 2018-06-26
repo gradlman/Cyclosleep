@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="@string/textEditAlarm"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+            
+            <LinearLayout
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:layout_width="0px" android:layout_height="0px"/>
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/txt_default"
+                android:gravity="center"
+                android:lines="1"
+                android:text="AlarmName"
+                android:typeface="serif" android:maxLines="1" android:inputType="text"
+                android:nextFocusUp="@+id/txtName" android:nextFocusLeft="@+id/txtName" android:textColor="#ffe7e7e7">
+            </EditText>
+
+            <ToggleButton
+                android:id="@+id/btnEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/toggle_button"
+                android:minHeight="50dp"
+                android:minWidth="150dp"
+                android:text="ToggleButton">
+                </ToggleButton>
+            
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_interaction"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_static"
+                        android:text="@string/prefSnd"
+                        android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="fill_horizontal" android:layout_weight="1"/>
+
+                    <ToggleButton
+                        android:id="@+id/btnPreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:background="@drawable/toggle_button"
+                        android:minHeight="50dp"
+                        android:minWidth="50dp"
+                        android:onClick="onClickPreview"
+                        android:text="@string/textPreview"
+                        android:textOff="@string/textPreview"
+                        android:textOn="@string/textStop" />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/cmdSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/lblSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textNA"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_interaction"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_static"
+                    android:text="@string/prefTime"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TimePicker
+                    android:id="@+id/pickerTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/checkSunrise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prefSunrise" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_interaction"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_static"
+                    android:text="@string/prefRec"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioGroup
+                    android:id="@+id/groupRec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/radioDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/prefRecDay" />
+
+                    <RadioButton
+                        android:id="@+id/radioWeek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prefRecWeek" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right" >
+
+                        <ToggleButton
+                            android:id="@+id/btnMon"
+                            android:layout_width="42dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/toggle_button"
+                            android:text="Mon" />
+
+                        <ToggleButton
+                            android:id="@+id/btnTue"
+                            android:layout_width="42dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/toggle_button"
+                            android:text="ToggleButton" />
+
+                        <ToggleButton
+                            android:id="@+id/btnWed"
+                            android:layout_width="42dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/toggle_button"
+                            android:text="ToggleButton" />
+
+                        <ToggleButton
+                            android:id="@+id/btnThu"
+                            android:layout_width="42dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/toggle_button"
+                            android:text="ToggleButton" />
+
+                        <ToggleButton
+                            android:id="@+id/btnFri"
+                            android:layout_width="42dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/toggle_button"
+                            android:text="ToggleButton" />
+
+                        <ToggleButton
+                            android:id="@+id/btnSat"
+                            android:layout_width="42dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/toggle_button"
+                            android:text="ToggleButton" />
+
+                        <ToggleButton
+                            android:id="@+id/btnSun"
+                            android:layout_width="42dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/toggle_button"
+                            android:text="ToggleButton" />
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:id="@+id/radioOnce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prefRecOnce" />
+
+                    <DatePicker
+                        android:id="@+id/pickerDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_interaction"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_static"
+                    android:text="@string/prefAMessage"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/txtMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="3" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_interaction" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_default"
+            android:minWidth="100dp"
+            android:text="@string/textCancel" android:onClick="onClickCancel" android:textColor="@color/color_button_default" android:minHeight="40dp"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_default"
+            android:minWidth="100dp"
+            android:text="@string/textOk" android:onClick="onClickOk" android:textColor="@color/color_button_default" android:minHeight="40dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

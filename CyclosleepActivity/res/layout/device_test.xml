@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblMonitorStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_static"
+        android:text="@string/textNA"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_text_semi" android:autoLink="web"/>
+
+    <de.lme.plotview.PlotView
+        android:id="@+id/plotMonitor1"
+        android:layout_width="match_parent"
+        android:background="@drawable/def_border_u_cornered" android:layout_height="match_parent" android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/layoutCalibrate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" android:gravity="center">
+
+        <Button
+            android:id="@+id/btnDeviceTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_default"
+            android:minHeight="60dp"
+            android:minWidth="100dp"
+            android:onClick="onClickTest"
+            android:text="Button"
+            android:textColor="@color/color_button_default" />
+
+    </LinearLayout>
+
+</LinearLayout>

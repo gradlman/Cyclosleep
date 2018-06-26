@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="com.gradlspace.cys">
+
+	<PreferenceCategory android:title="@string/prefAlarms">
+
+		<com.gradlspace.widgets.AlarmPreference
+			android:key="pk_alarm0"
+			app:id="0" />
+
+		<com.gradlspace.widgets.AlarmPreference
+			android:key="pk_alarm1"
+			app:id="1" />
+
+		<com.gradlspace.widgets.AlarmPreference
+			android:key="pk_alarm2"
+			app:id="2" />
+
+		<com.gradlspace.widgets.AlarmPreference
+			android:key="pk_alarm3"
+			app:id="3" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="@string/prefAlarmSetup">
+
+		<PreferenceScreen
+			android:title="@string/prefAlarmAdv"
+			android:summary="@string/prefAlarmAdvDesc">
+
+			<ListPreference
+				android:key="pk_aa_atimeout"
+				android:title="@string/prefAaTimeout"
+				android:summary="@string/prefAaTimeoutDesc"
+				android:entries="@array/timeMediumArray"
+				android:entryValues="@array/timeMediumArrayValues"
+				android:dialogTitle="@string/prefAaTimeout" />
+
+			<CheckBoxPreference
+				android:key="pk_aa_sleeprating"
+				android:title="@string/prefSleepRating"
+				android:defaultValue="true"
+				android:summary="@string/prefSleepRatingDesc" />
+
+			<CheckBoxPreference
+				android:key="pk_aa_novib"
+				android:title="@string/prefAaVibe"
+				android:defaultValue="false"
+				android:summary="@string/prefAaVibeDesc" />
+
+			<CheckBoxPreference
+				android:key="pk_aa_nosounds"
+				android:title="@string/prefAaSound"
+				android:defaultValue="false"
+				android:summary="@string/prefAaSoundDesc" />
+
+			<CheckBoxPreference
+				android:key="pk_aa_ignoresilent"
+				android:title="@string/prefAaNoSilent"
+				android:summary="@string/prefAaNoSilentDesc" />
+
+			<CheckBoxPreference
+				android:key="pk_aa_riot"
+				android:title="@string/prefAaRiot"
+				android:defaultValue="true"
+				android:summary="@string/prefAaRiotDesc" />		
+
+			<ListPreference
+				android:key="pk_aa_commita"
+				android:title="@string/prefAaCommit"
+				android:summary="@string/prefAaCommitDesc"
+				android:entries="@array/prefCommitArray"
+				android:entryValues="@array/prefCommitArrayValues"
+				android:dialogTitle="@string/prefAaCommitDlg" />
+
+
+			<PreferenceScreen
+				android:title="@string/prefDream"
+				android:summary="@string/prefDreamDesc">
+
+				<CheckBoxPreference
+					android:key="pk_dream_ask"
+					android:title="@string/prefDreamAsk"
+					android:defaultValue="false"
+					android:summary="@string/prefDreamAskDesc" />
+
+				<CheckBoxPreference
+					android:key="pk_dream_async"
+					android:title="@string/prefDreamAsync"
+					android:defaultValue="false"
+					android:dependency="pk_dream_ask"
+					android:summary="@string/prefDreamAsyncDesc" />
+
+			</PreferenceScreen>
+
+
+			<!-- PreferenceScreen android:title="@string/prefSns" android:summary="@string/prefSnsDesc"> 
+				<CheckBoxPreference android:key="pk_sns_enable" android:title="@string/prefSnsEnable" 
+				android:defaultValue="false" android:summary="@string/prefSnsEnableDesc" 
+				/> <CheckBoxPreference android:key="pk_sns_email" android:title="@string/prefSnsEmail" 
+				android:dependency="pk_sns_enable" android:defaultValue="false" android:summary="@string/prefSnsEmailDesc" 
+				/> </PreferenceScreen -->
+
+
+			<!-- <PreferenceScreen android:title="Emergencies" android:summary="Configure 
+				actions for emergency events."> <PreferenceCategory android:title="Not implemented 
+				yet."> </PreferenceCategory> </PreferenceScreen> -->
+
+
+			<!-- PreferenceScreen android:title="Voice Recognition" android:summary="Configure 
+				voice recognition."> <PreferenceCategory android:title="Not implemented yet."> 
+				</PreferenceCategory> </PreferenceScreen> -->
+
+
+			<!-- PreferenceScreen android:title="Sound Recording" android:summary="Record 
+				sounds while sleeping."> <PreferenceCategory android:title="Not implemented 
+				yet."> </PreferenceCategory> </PreferenceScreen> -->
+
+
+			<PreferenceScreen
+				android:title="@string/prefSpeech"
+				android:summary="@string/prefSpeechDesc">
+
+				<CheckBoxPreference
+					android:key="pk_speech_enable"
+					android:title="@string/prefSpeechEnable"
+					android:defaultValue="false"
+					android:summary="@string/prefSpeechEnableDesc" />
+
+				<CheckBoxPreference
+					android:key="pk_speech_atime"
+					android:title="@string/prefSpeechAtime"
+					android:dependency="pk_speech_enable"
+					android:defaultValue="false"
+					android:summary="@string/prefSpeechAtimeDesc" />
+
+				<CheckBoxPreference
+					android:key="pk_speech_message"
+					android:title="@string/prefSpeechMessage"
+					android:dependency="pk_speech_enable"
+					android:defaultValue="false"
+					android:summary="@string/prefSpeechMessageDesc" />
+
+				<EditTextPreference
+					android:key="pk_speech_inter"
+					android:title="@string/prefSpeechInterval"
+					android:defaultValue="3"
+					android:dependency="pk_speech_atime"
+					android:digits="0123456789"
+					android:summary="@string/prefSpeechIntervalDesc"
+					android:dialogTitle="@string/prefSpeechInterval" />
+
+
+
+			</PreferenceScreen>
+
+
+			<!-- PreferenceScreen android:title="QuickTimer Settings" android:summary="Configure 
+				options for the QuickTimer."> <PreferenceCategory android:title="Not implemented 
+				yet."> </PreferenceCategory> <PreferenceCategory android:key="pk_timer_sound" 
+				android:title="Timer Sound"> </PreferenceCategory> </PreferenceScreen> -->
+
+
+			<!-- <PreferenceScreen android:title="Custom events" android:summary="Customize 
+				the event-table. (Expert)"> <PreferenceCategory android:title="Not implemented 
+				yet."> </PreferenceCategory> </PreferenceScreen> -->
+
+
+			<PreferenceScreen
+				android:title="@string/prefCustom"
+				android:key="pk_custom"
+				android:summary="@string/prefCustomDesc">
+				
+				<CheckBoxPreference
+				android:key="pk_aa_onlyonce"
+				android:title="@string/prefNoDup"
+				android:defaultValue="true"
+				android:summary="@string/prefNoDupDesc" />
+
+				<CheckBoxPreference
+					android:key="pk_g_simplemode"
+					android:defaultValue="false"
+					android:title="@string/prefSimple"
+					android:summary="@string/prefSimpleDesc" />
+				
+				<EditTextPreference
+					android:key="pk_aa_streamtimeout"
+					android:title="@string/prefStreamTimeout"
+					android:defaultValue="40"
+					android:digits="0123456789"
+					android:summary="@string/prefStreamTimeoutDesc"
+					android:dialogTitle="@string/prefStreamTimeout" />
+
+				<EditTextPreference
+					android:key="pk_aa_prefire"
+					android:title="@string/prefPrefireTime"
+					android:defaultValue="20"
+					android:digits="0123456789"
+					android:summary="@string/prefPrefireTimeDesc"
+					android:dialogTitle="@string/prefPrefireTime" />
+					
+				<CheckBoxPreference
+					android:key="pk_spt_noautoadapt"
+					android:defaultValue="false"
+					android:title="@string/prefNoAutoAdapt"
+					android:summary="@string/prefNoAutoAdaptDesc" />
+					
+				<EditTextPreference
+					android:key="pk_spt_varth"
+					android:title="@string/prefSPThreshold"
+					android:defaultValue="250"
+					android:digits="0123456789"
+					android:dependency="pk_spt_noautoadapt"
+					android:summary="@string/prefSPThresholdDesc"
+					android:dialogTitle="@string/prefSPThreshold" />
+
+				<EditTextPreference
+					android:key="pk_spt_awake"
+					android:title="@string/textStageAwake"
+					android:defaultValue="480"
+					android:digits="0123456789"
+					android:dependency="pk_spt_noautoadapt"
+					android:summary="@string/prefCustomStage"
+					android:dialogTitle="@string/textStageAwake" />
+
+				<EditTextPreference
+					android:key="pk_spt_dawn"
+					android:title="@string/textStageDawn"
+					android:defaultValue="250"
+					android:digits="0123456789"
+					android:dependency="pk_spt_noautoadapt"
+					android:summary="@string/prefCustomStage"
+					android:dialogTitle="@string/textStageDawn" />
+
+				<EditTextPreference
+					android:key="pk_spt_rem"
+					android:title="@string/textStageRem"
+					android:defaultValue="60"
+					android:digits="0123456789"
+					android:dependency="pk_spt_noautoadapt"
+					android:summary="@string/prefCustomStage"
+					android:dialogTitle="@string/textStageRem" />
+
+				<EditTextPreference
+					android:key="pk_spt_twil"
+					android:title="@string/textStageTwilight"
+					android:defaultValue="40"
+					android:digits="0123456789"
+					android:dependency="pk_spt_noautoadapt"
+					android:summary="@string/prefCustomStage"
+					android:dialogTitle="@string/textStageTwilight" />
+				
+				<CheckBoxPreference
+					android:key="pk_data_inchypno"
+					android:defaultValue="false"
+					android:title="@string/prefDataIncHypno"
+					android:summary="@string/prefDataIncHypnoDesc" />
+				
+				<CheckBoxPreference
+					android:key="pk_data_incdream"
+					android:defaultValue="false"
+					android:title="@string/prefDataIncDream"
+					android:summary="@string/prefDataIncDreamDesc" />
+				
+				<CheckBoxPreference
+					android:key="pk_data_verbose"
+					android:defaultValue="false"
+					android:title="Verbose axis data"
+					android:summary="Store additional raw axis data. For developement purposes only!" />
+
+				<Preference
+					android:key="pk_g_reset"
+					android:title="@string/prefReset"
+					android:summary="@string/prefResetDesc" />
+
+			</PreferenceScreen>
+		</PreferenceScreen>
+		
+		<CheckBoxPreference
+			android:key="pk_g_persistent"
+			android:title="@string/prefIcon"
+			android:defaultValue="true"
+			android:summary="@string/prefIconDesc" />
+			
+		<Preference
+			android:key="pk_g_calibrate"
+			android:title="@string/prefCalibrate"
+			android:summary="@string/prefCalibrateDesc">
+		</Preference>
+			
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/prefSleepMode">
+		<CheckBoxPreference
+			android:key="pk_sm_apmode"
+			android:title="@string/prefApMode"
+			android:defaultValue="true"
+			android:summary="@string/prefApModeDesc" />
+
+		<CheckBoxPreference
+			android:key="pk_sm_autorot"
+			android:title="@string/prefAoMode"
+			android:defaultValue="true"
+			android:summary="@string/prefAoModeDesc" />
+
+		<ListPreference
+			android:key="pk_sm_action"
+			android:title="@string/prefOnSleepNow"
+			android:summary="@string/prefOnSleepNowDesc"
+			android:entries="@array/prefOnSleepArray"
+			android:entryValues="@array/prefOnSleepArrayValues"
+			android:dialogTitle="@string/prefOnSleepNow" />
+			
+		<ListPreference
+			android:key="pk_sm_crippleMode"
+			android:title="@string/prefUseCripple"
+			android:summary="@string/prefUseCrippleDesc"
+			android:entries="@array/prefCrippleModes"
+			android:entryValues="@array/prefCrippleModesValues"
+			android:dialogTitle="@string/prefUseCripple" />
+			
+	</PreferenceCategory>
+
+
+	<PreferenceCategory android:title="@string/prefGlobal">
+
+		<PreferenceScreen
+			android:title="@string/prefData"
+			android:summary="@string/prefDataDesc">
+
+			<CheckBoxPreference
+				android:key="pk_data_enable"
+				android:title="@string/prefEnableData"
+				android:defaultValue="true"
+				android:summary="@string/prefEnableDataDesc" />
+
+			<CheckBoxPreference
+				android:key="pk_data_autocleanup"
+				android:dependency="pk_data_enable"
+				android:title="@string/prefAutoCleanup"
+				android:defaultValue="true"
+				android:summary="@string/prefAutoCleanupDesc" />
+
+			<CheckBoxPreference
+				android:key="pk_data_zip"
+				android:dependency="pk_data_enable"
+				android:title="@string/prefDataZip"
+				android:defaultValue="true"
+				android:summary="@string/prefDataZipDesc" />
+
+			<CheckBoxPreference
+				android:key="pk_data_nosensor"
+				android:dependency="pk_data_enable"
+				android:title="@string/prefNoSensorData"
+				android:defaultValue="true"
+				android:summary="@string/prefNoSensorDataDesc" />
+
+			<EditTextPreference
+				android:key="pk_data_path"
+				android:dependency="pk_data_enable"
+				android:title="@string/prefDataPath"
+				android:summary="@string/prefDataPathDesc"
+				android:defaultValue="ext"
+				android:dialogTitle="@string/prefDataPath" />
+
+			<EditTextPreference
+				android:key="pk_data_expire"
+				android:title="@string/prefExpire"
+				android:defaultValue="30"
+				android:digits="0123456789"
+				android:summary="@string/prefExpireDesc"
+				android:dialogTitle="@string/prefExpire" />
+
+			<CheckBoxPreference
+				android:key="pk_science"
+				android:title="@string/prefNoScience"
+				android:defaultValue="true"
+				android:summary="@string/prefNoScienceDesc" />
+		</PreferenceScreen>
+
+		
+
+		<CheckBoxPreference
+			android:key="pk_g_quicktimer"
+			android:title="@string/prefTimer"
+			android:defaultValue="false"
+			android:summary="@string/prefTimerDesc" />
+
+		<CheckBoxPreference
+			android:key="pk_g_hints"
+			android:title="@string/prefHints"
+			android:defaultValue="true"
+			android:summary="@string/prefHintsDesc" />
+			
+		<CheckBoxPreference
+			android:key="pk_g_report"
+			android:title="@string/prefReport"
+			android:defaultValue="true"
+			android:summary="@string/prefReportDesc" />
+
+		
+	</PreferenceCategory>
+</PreferenceScreen>

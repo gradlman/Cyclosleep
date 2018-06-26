@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblMonitorStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textNA"
+        android:textAppearance="?android:attr/textAppearanceSmall" android:background="@drawable/bg_interaction" android:textColor="@color/color_text_semi"/>
+
+    <de.lme.plotview.PlotView
+        android:id="@+id/plotMonitor1"
+        android:layout_width="match_parent"
+        android:background="@drawable/def_border_u_cornered" android:layout_height="match_parent" android:layout_weight="0.7"/>
+
+    <com.gradlspace.widgets.HypnogramView
+        android:id="@+id/plotMonitor2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:background="@drawable/def_border_u_cornered" />
+
+    <LinearLayout
+        android:id="@+id/layoutMonInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" android:background="@drawable/bg_interaction">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_marginTop="10dp" android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/lblMonInfoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/lblPrefire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/color_text_semi"/>
+
+        <SeekBar
+            android:id="@+id/seekPrefire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" android:progress="5" android:max="24" android:paddingRight="20dp" android:paddingLeft="20dp"/>
+
+        <Button
+            android:id="@+id/btnMonInfoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_default"
+            android:minHeight="60dp"
+            android:minWidth="100dp"
+            android:onClick="onClickCalibrate"
+            android:text="Button"
+            android:textColor="@color/color_button_default" />
+
+    </LinearLayout>
+
+</LinearLayout>

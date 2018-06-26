@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<!--<item android:id="@+id/sens_dec" android:icon="@drawable/ic_media_rew" android:title="@string/textDecSens"></item>
+    <item android:id="@+id/calibrate" android:icon="@drawable/ic_menu_compass" android:title="@string/textCalibrate"></item>
+    <item android:id="@+id/sens_inc" android:icon="@drawable/ic_media_ff" android:title="@string/textIncSens"></item>  -->
+    
+    <item android:id="@+id/help" android:icon="@drawable/ic_menu_info_details" android:title="@string/textHelp"></item>
+	
+	</menu>

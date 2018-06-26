@@ -1,0 +1,1500 @@
+com.google.android.vending.licensing.AESObfuscator -> com.a.a.a.a.a:
+    byte[] IV -> a
+    javax.crypto.Cipher mEncryptor -> b
+    javax.crypto.Cipher mDecryptor -> c
+    java.lang.String obfuscate(java.lang.String,java.lang.String) -> a
+    java.lang.String unobfuscate(java.lang.String,java.lang.String) -> b
+com.google.android.vending.licensing.DeviceLimiter -> com.a.a.a.a.b:
+com.google.android.vending.licensing.ILicenseResultListener -> com.a.a.a.a.c:
+    void verifyLicense(int,java.lang.String,java.lang.String) -> a
+com.google.android.vending.licensing.ILicenseResultListener$Stub -> com.a.a.a.a.d:
+    android.os.IBinder asBinder() -> asBinder
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.google.android.vending.licensing.ILicenseResultListener$Stub$Proxy -> com.a.a.a.a.e:
+    android.os.IBinder mRemote -> a
+    android.os.IBinder asBinder() -> asBinder
+    void verifyLicense(int,java.lang.String,java.lang.String) -> a
+com.google.android.vending.licensing.ILicensingService -> com.a.a.a.a.f:
+    void checkLicense(long,java.lang.String,com.google.android.vending.licensing.ILicenseResultListener) -> a
+com.google.android.vending.licensing.ILicensingService$Stub -> com.a.a.a.a.g:
+    com.google.android.vending.licensing.ILicensingService asInterface(android.os.IBinder) -> a
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.google.android.vending.licensing.ILicensingService$Stub$Proxy -> com.a.a.a.a.h:
+    android.os.IBinder mRemote -> a
+    android.os.IBinder asBinder() -> asBinder
+    void checkLicense(long,java.lang.String,com.google.android.vending.licensing.ILicenseResultListener) -> a
+com.google.android.vending.licensing.LicenseChecker -> com.a.a.a.a.i:
+    java.security.SecureRandom RANDOM -> a
+    com.google.android.vending.licensing.ILicensingService mService -> b
+    java.security.PublicKey mPublicKey -> c
+    android.content.Context mContext -> d
+    com.google.android.vending.licensing.Policy mPolicy -> e
+    android.os.Handler mHandler -> f
+    java.lang.String mPackageName -> g
+    java.lang.String mVersionCode -> h
+    java.util.Set mChecksInProgress -> i
+    java.util.Queue mPendingChecks -> j
+    java.security.PublicKey generatePublicKey(java.lang.String) -> a
+    void checkAccess(com.google.android.vending.licensing.LicenseCheckerCallback) -> a
+    void runChecks() -> b
+    void finishCheck(com.google.android.vending.licensing.LicenseValidator) -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    void handleServiceConnectionError(com.google.android.vending.licensing.LicenseValidator) -> b
+    void cleanupService() -> c
+    void onDestroy() -> a
+    java.lang.String getVersionCode(android.content.Context,java.lang.String) -> a
+    void access$0(com.google.android.vending.licensing.LicenseChecker,com.google.android.vending.licensing.LicenseValidator) -> a
+    void access$1(com.google.android.vending.licensing.LicenseChecker,com.google.android.vending.licensing.LicenseValidator) -> b
+    android.os.Handler access$2(com.google.android.vending.licensing.LicenseChecker) -> a
+    java.util.Set access$3(com.google.android.vending.licensing.LicenseChecker) -> b
+    java.security.PublicKey access$4(com.google.android.vending.licensing.LicenseChecker) -> c
+com.google.android.vending.licensing.LicenseChecker$ResultListener -> com.a.a.a.a.j:
+    com.google.android.vending.licensing.LicenseValidator mValidator -> b
+    java.lang.Runnable mOnTimeout -> c
+    com.google.android.vending.licensing.LicenseChecker this$0 -> a
+    void verifyLicense(int,java.lang.String,java.lang.String) -> a
+    com.google.android.vending.licensing.LicenseValidator access$0(com.google.android.vending.licensing.LicenseChecker$ResultListener) -> a
+    void access$1(com.google.android.vending.licensing.LicenseChecker$ResultListener) -> b
+    com.google.android.vending.licensing.LicenseChecker access$2(com.google.android.vending.licensing.LicenseChecker$ResultListener) -> c
+com.google.android.vending.licensing.LicenseChecker$ResultListener$1 -> com.a.a.a.a.k:
+    com.google.android.vending.licensing.LicenseChecker$ResultListener this$1 -> a
+    void run() -> run
+com.google.android.vending.licensing.LicenseChecker$ResultListener$2 -> com.a.a.a.a.l:
+    com.google.android.vending.licensing.LicenseChecker$ResultListener this$1 -> a
+    int val$responseCode -> b
+    java.lang.String val$signedData -> c
+    java.lang.String val$signature -> d
+    void run() -> run
+com.google.android.vending.licensing.LicenseCheckerCallback -> com.a.a.a.a.m:
+    void allow(int) -> a
+    void dontAllow(int) -> b
+    void applicationError(int) -> c
+com.google.android.vending.licensing.LicenseValidator -> com.a.a.a.a.n:
+    com.google.android.vending.licensing.Policy mPolicy -> a
+    com.google.android.vending.licensing.LicenseCheckerCallback mCallback -> b
+    int mNonce -> c
+    java.lang.String mPackageName -> d
+    java.lang.String mVersionCode -> e
+    com.google.android.vending.licensing.DeviceLimiter mDeviceLimiter -> f
+    com.google.android.vending.licensing.LicenseCheckerCallback getCallback() -> a
+    int getNonce() -> b
+    java.lang.String getPackageName() -> c
+    void verify(java.security.PublicKey,int,java.lang.String,java.lang.String) -> a
+    void handleResponse(int,com.google.android.vending.licensing.ResponseData) -> a
+    void handleApplicationError(int) -> a
+    void handleInvalidResponse() -> d
+com.google.android.vending.licensing.NullDeviceLimiter -> com.a.a.a.a.o:
+com.google.android.vending.licensing.Obfuscator -> com.a.a.a.a.p:
+    java.lang.String obfuscate(java.lang.String,java.lang.String) -> a
+    java.lang.String unobfuscate(java.lang.String,java.lang.String) -> b
+com.google.android.vending.licensing.Policy -> com.a.a.a.a.q:
+    void processServerResponse(int,com.google.android.vending.licensing.ResponseData) -> a
+    boolean allowAccess() -> a
+com.google.android.vending.licensing.PreferenceObfuscator -> com.a.a.a.a.r:
+    android.content.SharedPreferences mPreferences -> a
+    com.google.android.vending.licensing.Obfuscator mObfuscator -> b
+    android.content.SharedPreferences$Editor mEditor -> c
+    void putString(java.lang.String,java.lang.String) -> a
+    java.lang.String getString(java.lang.String,java.lang.String) -> b
+    void commit() -> a
+com.google.android.vending.licensing.ResponseData -> com.a.a.a.a.s:
+    int responseCode -> a
+    int nonce -> b
+    java.lang.String packageName -> c
+    java.lang.String versionCode -> d
+    java.lang.String userId -> e
+    long timestamp -> f
+    java.lang.String extra -> g
+    java.lang.String toString() -> toString
+com.google.android.vending.licensing.ServerManagedPolicy -> com.a.a.a.a.t:
+    long mValidityTimestamp -> a
+    long mRetryUntil -> b
+    long mMaxRetries -> c
+    long mRetryCount -> d
+    long mLastResponseTime -> e
+    int mLastResponse -> f
+    com.google.android.vending.licensing.PreferenceObfuscator mPreferences -> g
+    void processServerResponse(int,com.google.android.vending.licensing.ResponseData) -> a
+    void setRetryCount(long) -> a
+    void setValidityTimestamp(java.lang.String) -> a
+    void setRetryUntil(java.lang.String) -> b
+    long getRetryUntil() -> b
+    void setMaxRetries(java.lang.String) -> c
+    boolean allowAccess() -> a
+    java.util.Map decodeExtras(java.lang.String) -> d
+com.google.android.vending.licensing.ValidationException -> com.a.a.a.a.u:
+com.google.android.vending.licensing.util.Base64 -> com.a.a.a.a.a.a:
+    byte[] ALPHABET -> b
+    byte[] WEBSAFE_ALPHABET -> c
+    byte[] DECODABET -> d
+    byte[] WEBSAFE_DECODABET -> e
+    boolean $assertionsDisabled -> a
+    java.lang.String encode(byte[]) -> a
+    int decode4to3$355785af(byte[],byte[],int,byte[]) -> a
+    byte[] decode(java.lang.String) -> a
+com.google.android.vending.licensing.util.Base64DecoderException -> com.a.a.a.a.a.b:
+com.gradlspace.cys.AudioHandler -> com.gradlspace.cys.a:
+    android.media.AudioManager sBoundAudioManager -> a
+    android.media.MediaPlayer sMediaPlayer -> b
+    android.media.MediaPlayer sSignalPlayer -> c
+    int sMaxMusicVolume -> d
+    int sPrevMusicVolume -> e
+    java.lang.String sPlayingSong -> f
+    com.gradlspace.cys.AudioHandler$InternalAlarm sLastSignal -> g
+    android.media.ToneGenerator s_toneGen -> h
+    android.content.BroadcastReceiver s_mediaScanner -> i
+    android.content.IntentFilter s_mediaFilter -> j
+    android.media.AudioManager$OnAudioFocusChangeListener sChangeListener -> k
+    void onAudioFocusChange(int) -> onAudioFocusChange
+    void registerMediaScannerListener() -> a
+    boolean loadSounds(android.content.Context,boolean) -> a
+    void playTone$255f295(int) -> a
+    void cleanSignal() -> b
+    boolean startStream$5ffc0101(java.lang.String) -> a
+    boolean confirmLoud(android.content.Context) -> a
+    int startSong(android.content.Context,java.lang.String,float,boolean) -> a
+    void stopSong() -> c
+    void setVolume$1a54d82d(float) -> a
+    void vibrate(android.content.Context,int) -> a
+    java.lang.String extractParam(java.lang.String,boolean) -> a
+com.gradlspace.cys.AudioHandler$1 -> com.gradlspace.cys.b:
+    java.lang.String action -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.gradlspace.cys.AudioHandler$InternalAlarm -> com.gradlspace.cys.c:
+    com.gradlspace.cys.AudioHandler$InternalAlarm BELL_CHILL -> a
+    com.gradlspace.cys.AudioHandler$InternalAlarm BELL_HORN -> b
+    com.gradlspace.cys.AudioHandler$InternalAlarm BELL_SIMPLE -> c
+    com.gradlspace.cys.AudioHandler$InternalAlarm BELL_SOFT -> d
+    com.gradlspace.cys.AudioHandler$InternalAlarm BELL_SIG -> e
+    int resId -> f
+    java.lang.String name -> g
+    com.gradlspace.cys.AudioHandler$InternalAlarm[] ENUM$VALUES -> h
+    int getResId() -> a
+    java.lang.String getName() -> b
+    com.gradlspace.cys.AudioHandler$InternalAlarm[] values() -> values
+    com.gradlspace.cys.AudioHandler$InternalAlarm valueOf(java.lang.String) -> valueOf
+com.gradlspace.cys.AudioHandler$Sounds -> com.gradlspace.cys.d:
+    java.lang.String[] mTitleArray -> a
+com.gradlspace.cys.Dream -> com.gradlspace.cys.e:
+    long timestamp -> a
+    byte emotion -> b
+    java.lang.String headline -> c
+    byte rating -> d
+    java.lang.String text -> e
+    java.lang.String getEmotionString(byte) -> a
+    boolean saveToFile(android.content.Context,java.lang.String) -> a
+    boolean loadFromFile$5ffc0101(java.lang.String) -> a
+com.gradlspace.cys.FileManager -> com.gradlspace.cys.f:
+    java.util.ArrayList dataFiles -> a
+    java.util.ArrayList sleepLog -> b
+    java.lang.Thread workThread -> c
+    int createSleepLog(android.content.Context) -> a
+    int readDataFiles(android.content.Context) -> b
+    long getFreeSpace(java.lang.String) -> b
+    java.lang.String getFilesDirName(android.content.Context,com.gradlspace.cys.FileManager$FileRequest,java.lang.String) -> a
+    java.io.File getFilesDir(android.content.Context,com.gradlspace.cys.FileManager$FileRequest) -> a
+    java.lang.String compressFile(java.lang.String) -> a
+    java.lang.String compressFile(java.lang.String,java.lang.String) -> a
+    int archiveFiles(android.content.Context) -> c
+    int purgeOldFiles(android.content.Context) -> d
+    int purgeAllFiles(android.content.Context) -> e
+    java.lang.String getLastHypnoFile(android.content.Context,int) -> a
+com.gradlspace.cys.FileManager$1 -> com.gradlspace.cys.g:
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.gradlspace.cys.FileManager$2 -> com.gradlspace.cys.h:
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.gradlspace.cys.FileManager$3 -> com.gradlspace.cys.i:
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.gradlspace.cys.FileManager$FileRequest -> com.gradlspace.cys.j:
+    com.gradlspace.cys.FileManager$FileRequest READ -> a
+    com.gradlspace.cys.FileManager$FileRequest WRITE_SMALL -> b
+    com.gradlspace.cys.FileManager$FileRequest WRITE -> c
+    com.gradlspace.cys.FileManager$FileRequest[] ENUM$VALUES -> d
+    com.gradlspace.cys.FileManager$FileRequest[] values() -> values
+    com.gradlspace.cys.FileManager$FileRequest valueOf(java.lang.String) -> valueOf
+com.gradlspace.cys.Guardian -> com.gradlspace.cys.k:
+    java.lang.Thread$UncaughtExceptionHandler defaultUEH -> a
+    android.content.Context app -> b
+    java.lang.StringBuilder report -> c
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+    void setHandler(android.content.Context) -> a
+    void run() -> run
+    void clearReport() -> a
+    void dispatchReport(java.lang.String) -> a
+com.gradlspace.cys.Hypnogram -> com.gradlspace.cys.l:
+    java.util.ArrayList stages -> a
+    byte rating -> b
+    com.gradlspace.cys.Hypnogram$Stats stats -> c
+    long getTimespan() -> b
+    void calculateStats() -> a
+    void fillLastDuration(long) -> a
+    int loadFromFile$607b2e96(java.lang.String) -> a
+    boolean saveToFile(android.content.Context,java.lang.String) -> a
+com.gradlspace.cys.Hypnogram$Stats -> com.gradlspace.cys.m:
+    long timeSpan -> a
+    long timeStart -> b
+    long sleepSpan -> c
+    long sleepSpanDawn -> d
+    float averagePhase -> e
+    java.util.EnumMap phaseCount -> f
+    java.util.EnumMap phaseDistrib -> g
+com.gradlspace.cys.LicenseManager -> com.gradlspace.cys.n:
+    byte[] SALT -> d
+    java.lang.String mDeviceId -> e
+    java.lang.Thread mLicThread -> f
+    com.google.android.vending.licensing.LicenseChecker mChecker -> g
+    com.google.android.vending.licensing.ServerManagedPolicy mCheckerPolicy -> h
+    com.google.android.vending.licensing.LicenseCheckerCallback mLicenseCheckerCallback -> i
+    long sLastKnownTryUntil -> a
+    com.gradlspace.cys.LicenseManager$StaticReturnCode sLastReturnCode -> b
+    boolean m_broadcastCall -> j
+    boolean s_checkInProgress -> c
+    void checkLicense(com.google.android.vending.licensing.LicenseCheckerCallback) -> a
+    void unregisterCallback() -> a
+    boolean access$0() -> b
+    com.google.android.vending.licensing.ServerManagedPolicy access$1() -> c
+    byte[] access$2() -> d
+    java.lang.String access$3() -> e
+    void access$4(com.google.android.vending.licensing.ServerManagedPolicy) -> a
+    void access$5(com.google.android.vending.licensing.LicenseChecker) -> a
+    void access$6$1385ff() -> f
+    com.google.android.vending.licensing.LicenseCheckerCallback access$7() -> g
+    com.google.android.vending.licensing.LicenseChecker access$8() -> h
+com.gradlspace.cys.LicenseManager$1 -> com.gradlspace.cys.o:
+    void run() -> run
+com.gradlspace.cys.LicenseManager$StaticLicenseCheckerCallback -> com.gradlspace.cys.p:
+    void allow(int) -> a
+    void dontAllow(int) -> b
+    void applicationError(int) -> c
+com.gradlspace.cys.LicenseManager$StaticReturnCode -> com.gradlspace.cys.q:
+    com.gradlspace.cys.LicenseManager$StaticReturnCode OK -> a
+    com.gradlspace.cys.LicenseManager$StaticReturnCode DENIED -> b
+    com.gradlspace.cys.LicenseManager$StaticReturnCode ERROR -> c
+    com.gradlspace.cys.LicenseManager$StaticReturnCode[] ENUM$VALUES -> d
+    com.gradlspace.cys.LicenseManager$StaticReturnCode[] values() -> values
+    com.gradlspace.cys.LicenseManager$StaticReturnCode valueOf(java.lang.String) -> valueOf
+com.gradlspace.cys.LockAuthority -> com.gradlspace.cys.r:
+    android.os.PowerManager$WakeLock s_normalLock -> a
+    android.os.PowerManager$WakeLock s_secureLock -> b
+    int s_secureFlags -> c
+    int s_normalFlags -> d
+    com.gradlspace.cys.LockAuthority$LockMode s_mode -> e
+    int[] $SWITCH_TABLE$com$gradlspace$cys$LockAuthority$LockMode -> f
+    void loadFlags() -> a
+    void setMode(com.gradlspace.cys.LockAuthority$LockMode) -> a
+    void reset() -> b
+    boolean isValid() -> c
+    void acquireSecure() -> d
+    void releaseSecure() -> e
+    void acquireNormal() -> f
+    void releaseNormal() -> g
+    int[] $SWITCH_TABLE$com$gradlspace$cys$LockAuthority$LockMode() -> h
+com.gradlspace.cys.LockAuthority$LockMode -> com.gradlspace.cys.s:
+    com.gradlspace.cys.LockAuthority$LockMode DEFAULT -> a
+    com.gradlspace.cys.LockAuthority$LockMode NOSENSOR -> b
+    com.gradlspace.cys.LockAuthority$LockMode[] ENUM$VALUES -> c
+    com.gradlspace.cys.LockAuthority$LockMode[] values() -> values
+    com.gradlspace.cys.LockAuthority$LockMode valueOf(java.lang.String) -> valueOf
+com.gradlspace.cys.NetworkReceiver -> com.gradlspace.cys.NetworkReceiver:
+    java.lang.String mAction -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.gradlspace.cys.SPTracker -> com.gradlspace.cys.t:
+    com.gradlspace.cys.Hypnogram mHypnogram -> x
+    int sAwakeMin -> a
+    int sDawnMin -> b
+    int sRemMin -> c
+    int sTwilightMin -> d
+    int varThreshold -> e
+    int maxSensorValue -> f
+    int curSensorValue -> g
+    float meanSensorValue -> h
+    long millisNow -> i
+    boolean fireOnNext -> j
+    de.lme.plotview.SamplingPlot stream -> k
+    java.lang.String streamHeader -> l
+    boolean saveData -> m
+    boolean autoAdapt -> n
+    boolean isPrestart -> o
+    int runAct -> p
+    boolean peaked -> q
+    boolean calibrate -> r
+    long spanMillis -> s
+    long minute -> t
+    long millisStartTime -> u
+    float avgSleepHours -> v
+    java.util.ArrayList avgSleepHourHist -> w
+    com.gradlspace.cys.SPTracker$OnSleepPhaseChangeListener sChangeListener -> y
+    void loadSettings() -> e
+    void saveSettings() -> f
+    void init() -> a
+    void reset() -> g
+    void save(android.content.Context) -> a
+    float loadAvgSleep() -> h
+    com.gradlspace.cys.Hypnogram getHypnogram() -> b
+    void setOnPhaseChangeListener(com.gradlspace.cys.SPTracker$OnSleepPhaseChangeListener) -> a
+    void initTracking() -> c
+    void transitPhase(long,com.gradlspace.cys.SleepStage$SleepPhase) -> a
+    com.gradlspace.cys.SleepStage$SleepPhase evaluateValue(long) -> a
+    boolean onSensorUpdate() -> d
+com.gradlspace.cys.SPTracker$OnSleepPhaseChangeListener -> com.gradlspace.cys.u:
+    void onPhaseChanged(com.gradlspace.cys.SleepStage$SleepPhase,com.gradlspace.cys.SleepStage$SleepPhase) -> a
+com.gradlspace.cys.SleepStage -> com.gradlspace.cys.v:
+    com.gradlspace.cys.SleepStage$SleepPhase phase -> a
+    long startMillis -> b
+    long durationMillis -> c
+com.gradlspace.cys.SleepStage$SleepPhase -> com.gradlspace.cys.w:
+    com.gradlspace.cys.SleepStage$SleepPhase UNKNOWN -> a
+    com.gradlspace.cys.SleepStage$SleepPhase DEAD -> b
+    com.gradlspace.cys.SleepStage$SleepPhase DEEP -> c
+    com.gradlspace.cys.SleepStage$SleepPhase TWILIGHT -> d
+    com.gradlspace.cys.SleepStage$SleepPhase REM -> e
+    com.gradlspace.cys.SleepStage$SleepPhase DAWN -> f
+    com.gradlspace.cys.SleepStage$SleepPhase AWAKE -> g
+    int[] $SWITCH_TABLE$com$gradlspace$cys$SleepStage$SleepPhase -> h
+    com.gradlspace.cys.SleepStage$SleepPhase[] ENUM$VALUES -> i
+    int ordinalRev() -> a
+    java.lang.String getText(android.content.res.Resources) -> a
+    com.gradlspace.cys.SleepStage$SleepPhase[] values() -> values
+    com.gradlspace.cys.SleepStage$SleepPhase valueOf(java.lang.String) -> valueOf
+    int[] $SWITCH_TABLE$com$gradlspace$cys$SleepStage$SleepPhase() -> b
+com.gradlspace.cys.Space -> com.gradlspace.cys.x:
+    long sPrestartMillis -> a
+    android.app.Notification sNotification -> e
+    android.app.PendingIntent sNotifyIntent -> f
+    boolean sendReport -> b
+    boolean sIsWakeCrippledDevice -> c
+    android.content.Context appContext -> g
+    java.lang.String logBuffer -> d
+    boolean sIsNotifyValid -> h
+    android.content.Context get() -> a
+    void doTriggerUpdate(android.content.Context,boolean,boolean) -> a
+    void doNotifyUpdate(android.content.Context,java.lang.String,int) -> a
+    android.app.AlarmManager getAlarmManager() -> b
+    android.media.AudioManager getAudioManager(android.content.Context) -> a
+    android.os.PowerManager getPowerManager() -> c
+    android.os.Vibrator getVibrator(android.content.Context) -> b
+    void initSpace(android.content.Context) -> c
+    void resetOperations() -> d
+    void doUninstall() -> e
+    void log(java.lang.String) -> a
+    void logRelease(java.lang.String) -> b
+    android.content.SharedPreferences spref() -> f
+    boolean prefIsEulaAccepted$faab209() -> g
+    boolean prefIsFirstStart$faab209() -> h
+    boolean prefIsTriggerEnabled$1a54e374(int) -> a
+    void prefSetEulaAccepted$1a552341(boolean) -> a
+    void prefSetFirstStart$1385ff() -> i
+    void prefSetBatteryUsage(int) -> b
+    int prefGetBatteryUsage() -> j
+    java.lang.String prefGetPrefireTime() -> k
+    boolean prefSetPrefireTime(int) -> c
+    java.lang.String prefGetCrippleWorkaround() -> l
+    boolean prefIsSimpleMode() -> m
+    java.lang.String prefTriggerSound(int) -> d
+    void showNotify(android.content.Context,java.lang.String,int) -> b
+    void showToast(android.content.Context,java.lang.String) -> a
+    void showToast(android.content.Context,int) -> a
+    void showHint(android.content.Context,int) -> b
+    void showToast(android.content.Context,java.lang.String,int) -> c
+    boolean isSleeping() -> n
+    void setAirplaneMode(boolean) -> b
+    void sleepEnd$1385ff() -> o
+    void sleepStart$1385ff() -> p
+    int startActivity(android.content.Context,java.lang.Class) -> a
+    int startActivity$6045e014(android.content.Context,java.lang.Class,java.lang.String,java.lang.Integer) -> a
+    int startSendActivity$2debbc18(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    int startViewerActivity(android.content.Context,java.lang.String) -> b
+    void error(java.lang.String) -> c
+com.gradlspace.cys.Space$AirplaneTask -> com.gradlspace.cys.y:
+    boolean m_enable -> a
+    void run() -> run
+com.gradlspace.cys.TimeTrigger -> com.gradlspace.cys.z:
+    java.util.GregorianCalendar mCalendar -> g
+    java.lang.String recurrence -> a
+    long mLastFireTime -> h
+    boolean mHasPrefired -> i
+    long t_millisTime -> j
+    void setNextOccurrence(long) -> a
+    byte compareTo(long) -> c
+    void setTriggerTime(long) -> b
+    void setHourMin(int,int) -> a
+    java.lang.String getTimeString() -> a
+    java.lang.String getDateTimeString() -> f
+    java.lang.String getFireString() -> b
+    long getFireTime() -> c
+    java.lang.String getPrefireWindowString(android.content.Context) -> a
+    void onInit(android.content.Context) -> b
+    void retrieveValues(android.content.Context) -> c
+    long onFire(android.content.Context,boolean) -> a
+    void persistValues(android.content.Context,android.content.SharedPreferences$Editor) -> a
+com.gradlspace.cys.Trigger -> com.gradlspace.cys.aa:
+    int id -> b
+    boolean enabled -> c
+    java.lang.String mName -> d
+    java.lang.String text -> e
+    java.lang.String mAlarmSound -> f
+    void setAlarmSound(java.lang.String) -> a
+    java.lang.String getAlarmSound() -> d
+    java.lang.String getName() -> e
+    void setName(java.lang.String) -> b
+    java.lang.String getFireString() -> b
+    void onInit(android.content.Context) -> b
+    void retrieveValues(android.content.Context) -> c
+    void persistValues(android.content.Context,android.content.SharedPreferences$Editor) -> a
+com.gradlspace.cys.TriggerHandler -> com.gradlspace.cys.TriggerHandler:
+    java.util.ArrayList sTriggers -> a
+    java.lang.String tAction -> b
+    android.app.PendingIntent mPendingInt -> c
+    int loadTriggers(android.content.Context) -> a
+    void setAlarm$2747d830(android.content.Context,int,int) -> a
+    com.gradlspace.cys.Trigger getTrigger(int) -> a
+    com.gradlspace.cys.TimeTrigger getNextTimeTrigger$10fa38c6() -> a
+    java.lang.CharSequence getNextTriggerEta(android.content.Context) -> b
+    int getNumTriggers$1385f2() -> b
+    void disableAllTriggers(android.content.Context) -> c
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    void installSystemAlarm() -> c
+    void cancelSystemAlarm(android.content.Context) -> d
+com.gradlspace.cys.activities.AboutActivity -> com.gradlspace.cys.activities.AboutActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClickEula(android.view.View) -> onClickEula
+    void onClickTutorial(android.view.View) -> onClickTutorial
+    void onClickContact(android.view.View) -> onClickContact
+com.gradlspace.cys.activities.AboutActivity$1 -> com.gradlspace.cys.activities.a:
+    com.gradlspace.cys.activities.AboutActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+com.gradlspace.cys.activities.AlarmActivity -> com.gradlspace.cys.activities.AlarmActivity:
+    boolean sIsRunning -> a
+    java.lang.String mAction -> b
+    android.widget.TextView m_lblClock -> c
+    android.content.BroadcastReceiver mTimeReceiver -> d
+    android.content.IntentFilter sTimeIntentFilter -> e
+    com.gradlspace.cys.activities.AlarmActivity$AlarmTicker mTimer -> f
+    boolean dismiss(boolean) -> a
+    boolean rateSleep() -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onClickDismiss(android.view.View) -> onClickDismiss
+    void onBackPressed() -> onBackPressed
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void onLowMemory() -> onLowMemory
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onInit(int) -> onInit
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    android.widget.TextView access$0(com.gradlspace.cys.activities.AlarmActivity) -> a
+com.gradlspace.cys.activities.AlarmActivity$1 -> com.gradlspace.cys.activities.b:
+    com.gradlspace.cys.activities.AlarmActivity this$0 -> a
+    void run() -> run
+com.gradlspace.cys.activities.AlarmActivity$2 -> com.gradlspace.cys.activities.c:
+    com.gradlspace.cys.activities.AlarmActivity this$0 -> a
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+com.gradlspace.cys.activities.AlarmActivity$3 -> com.gradlspace.cys.activities.d:
+    com.gradlspace.cys.activities.AlarmActivity this$0 -> a
+    int val$randsize -> b
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+com.gradlspace.cys.activities.AlarmActivity$4 -> com.gradlspace.cys.activities.e:
+    com.gradlspace.cys.activities.AlarmActivity this$0 -> a
+    int val$res -> b
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+com.gradlspace.cys.activities.AlarmActivity$AlarmTicker -> com.gradlspace.cys.activities.f:
+    android.os.PowerManager$WakeLock mWakeLock -> g
+    android.content.Context mContext -> h
+    long mStartMillis -> i
+    long mPassedMillis -> j
+    int mTriggerId -> k
+    android.speech.tts.TextToSpeech mTts -> a
+    boolean mTtsAnnounce -> b
+    boolean mTtsMessage -> c
+    long mTtsInterval -> d
+    boolean m_playSounds -> e
+    boolean doRiot -> l
+    com.gradlspace.cys.activities.AlarmActivity this$0 -> f
+    void cleanup() -> a
+    void onFinish() -> onFinish
+    void onTick(long) -> onTick
+    int access$0(com.gradlspace.cys.activities.AlarmActivity$AlarmTicker) -> a
+com.gradlspace.cys.activities.AlarmActivity$TimeTickReceiver -> com.gradlspace.cys.activities.g:
+    java.lang.String tAction -> b
+    com.gradlspace.cys.activities.AlarmActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.gradlspace.cys.activities.AlarmEditActivity -> com.gradlspace.cys.activities.AlarmEditActivity:
+    int mAlarmIdx -> a
+    android.widget.Spinner cmbSound -> b
+    android.widget.RadioGroup recGroup -> c
+    android.widget.TextView lblSound -> d
+    android.widget.ToggleButton dialogBtnEnabled -> e
+    android.widget.TimePicker timePicker -> f
+    android.widget.EditText txtName -> g
+    android.widget.EditText txtMessage -> h
+    android.widget.ToggleButton mon -> i
+    android.widget.ToggleButton tue -> j
+    android.widget.ToggleButton wed -> k
+    android.widget.ToggleButton thu -> l
+    android.widget.ToggleButton fri -> m
+    android.widget.ToggleButton sat -> n
+    android.widget.ToggleButton sun -> o
+    android.widget.DatePicker recDate -> p
+    android.widget.CheckBox sunrise -> q
+    android.media.MediaPlayer m_MediaPlayer -> r
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClickOk(android.view.View) -> onClickOk
+    void onClickCancel(android.view.View) -> onClickCancel
+    void onClickPreview(android.view.View) -> onClickPreview
+    void onResume() -> onResume
+    void onPause() -> onPause
+    android.widget.TextView access$0(com.gradlspace.cys.activities.AlarmEditActivity) -> a
+    android.media.MediaPlayer access$1(com.gradlspace.cys.activities.AlarmEditActivity) -> b
+com.gradlspace.cys.activities.AlarmEditActivity$1 -> com.gradlspace.cys.activities.h:
+    com.gradlspace.cys.activities.AlarmEditActivity this$0 -> a
+    void onCheckedChanged(android.widget.RadioGroup,int) -> onCheckedChanged
+com.gradlspace.cys.activities.AlarmEditActivity$2 -> com.gradlspace.cys.activities.i:
+    com.gradlspace.cys.activities.AlarmEditActivity this$0 -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+    com.gradlspace.cys.activities.AlarmEditActivity access$0(com.gradlspace.cys.activities.AlarmEditActivity$2) -> a
+com.gradlspace.cys.activities.AlarmEditActivity$2$1 -> com.gradlspace.cys.activities.j:
+    com.gradlspace.cys.activities.AlarmEditActivity$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.AlarmEditActivity$2$2 -> com.gradlspace.cys.activities.k:
+    com.gradlspace.cys.activities.AlarmEditActivity$2 this$1 -> a
+    android.widget.EditText val$input -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.AlarmEditActivity$2$3 -> com.gradlspace.cys.activities.l:
+    com.gradlspace.cys.activities.AlarmEditActivity$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.AlarmEditActivity$2$4 -> com.gradlspace.cys.activities.m:
+    com.gradlspace.cys.activities.AlarmEditActivity$2 this$1 -> a
+    android.widget.EditText val$input -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity -> com.gradlspace.cys.activities.CyclosleepActivity:
+    android.os.Handler mHandler -> c
+    java.lang.String mError -> d
+    android.widget.TextView mLblStatus -> e
+    android.widget.SeekBar mSeekerPreset -> f
+    com.gradlspace.widgets.TimeEdit mTxtTime -> a
+    android.widget.EditText mTxtHours -> b
+    com.gradlspace.cys.activities.CyclosleepActivity$QuickUiTimer mTimer -> g
+    android.content.BroadcastReceiver mTimeReceiver -> h
+    android.content.IntentFilter sTimeIntentFilter -> i
+    android.content.IntentFilter sBatteryIntentFilter -> j
+    java.lang.String tAction -> k
+    android.widget.ProgressBar mBarStats -> l
+    android.graphics.drawable.Drawable m_barDrawableNormal -> m
+    android.graphics.drawable.Drawable m_barDrawableRed -> n
+    android.widget.ToggleButton mBtnSleepNow -> o
+    android.widget.TextView mLblActiveTrigger -> p
+    android.widget.TextView mLblMainStats -> q
+    android.widget.TextView mLblNextTrigger -> r
+    int mBatteryLevel -> s
+    int mBatteryLastUsage -> t
+    int mBatteryTemp -> u
+    int mBatteryHealth -> v
+    int mBatteryVoltage -> w
+    java.lang.Thread s_apThread -> x
+    boolean notify_license -> y
+    void exitApp() -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onClickAlarmButton(android.view.View) -> onClickAlarmButton
+    void onClickFm1(android.view.View) -> onClickFm1
+    void onClickFm2(android.view.View) -> onClickFm2
+    void onClickFm3(android.view.View) -> onClickFm3
+    void onClickFm5(android.view.View) -> onClickFm5
+    void onClickQuickTimer(android.view.View) -> onClickQuickTimer
+    void onClickQuickTimerPreset(android.view.View) -> onClickQuickTimerPreset
+    void onClickSleepNow(android.view.View) -> onClickSleepNow
+    void onClickTimerButton(android.view.View) -> onClickTimerButton
+    void onCreate(android.os.Bundle) -> onCreate
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    void onDestroy() -> onDestroy
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void stopQuickTimer() -> c
+    void updateUi() -> b
+    void access$0$4ab58db8(com.gradlspace.cys.activities.CyclosleepActivity,java.lang.String) -> a
+    void access$1(com.gradlspace.cys.activities.CyclosleepActivity,java.lang.String) -> b
+    java.lang.String access$2(com.gradlspace.cys.activities.CyclosleepActivity) -> a
+    void access$3(com.gradlspace.cys.activities.CyclosleepActivity,int) -> a
+    int access$4(com.gradlspace.cys.activities.CyclosleepActivity) -> b
+    void access$5(com.gradlspace.cys.activities.CyclosleepActivity,int) -> b
+    void access$6(com.gradlspace.cys.activities.CyclosleepActivity,int) -> c
+    void access$7(com.gradlspace.cys.activities.CyclosleepActivity,int) -> d
+    void access$8(com.gradlspace.cys.activities.CyclosleepActivity,java.lang.String) -> c
+    void access$9$45648323(com.gradlspace.cys.activities.CyclosleepActivity) -> c
+    java.lang.String access$10(com.gradlspace.cys.activities.CyclosleepActivity) -> d
+com.gradlspace.cys.activities.CyclosleepActivity$1 -> com.gradlspace.cys.activities.n:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    java.lang.String val$result -> b
+    void run() -> run
+com.gradlspace.cys.activities.CyclosleepActivity$10 -> com.gradlspace.cys.activities.o:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$11 -> com.gradlspace.cys.activities.p:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$12 -> com.gradlspace.cys.activities.q:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$13 -> com.gradlspace.cys.activities.r:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$2 -> com.gradlspace.cys.activities.s:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$3 -> com.gradlspace.cys.activities.t:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$4 -> com.gradlspace.cys.activities.u:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$5 -> com.gradlspace.cys.activities.v:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$6 -> com.gradlspace.cys.activities.w:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$7 -> com.gradlspace.cys.activities.x:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$8 -> com.gradlspace.cys.activities.y:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$9 -> com.gradlspace.cys.activities.z:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.CyclosleepActivity$CysLicenseCheckerCallback -> com.gradlspace.cys.activities.aa:
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void allow(int) -> a
+    void applicationError(int) -> c
+    void dontAllow(int) -> b
+com.gradlspace.cys.activities.CyclosleepActivity$QuickUiTimer -> com.gradlspace.cys.activities.ab:
+    android.widget.TextView mLabel -> c
+    android.widget.Button mButton -> d
+    android.widget.TimePicker mPicker -> e
+    android.os.PowerManager$WakeLock mWakeLock -> f
+    boolean isRunning -> a
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> b
+    void changeState(boolean) -> a
+    void onFinish() -> onFinish
+    void onTick(long) -> onTick
+    void release() -> a
+    void updateWidgets(android.widget.TextView,android.widget.Button,android.widget.TimePicker) -> a
+com.gradlspace.cys.activities.CyclosleepActivity$TimeTickReceiver -> com.gradlspace.cys.activities.ac:
+    int m_deadCount -> b
+    com.gradlspace.cys.activities.CyclosleepActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.gradlspace.cys.activities.DeviceTestActivity -> com.gradlspace.cys.activities.DeviceTestActivity:
+    de.lme.plotview.PlotView mPlotView -> c
+    de.lme.plotview.SamplingPlot mActPlot -> d
+    android.widget.TextView m_lblStatus -> e
+    android.widget.Button m_btnTest -> f
+    boolean m_isDisplayOn -> g
+    de.lme.plotview.SamplingPlot stream -> a
+    android.hardware.Sensor mSensor -> h
+    android.hardware.SensorManager mSensorMan -> i
+    int m_synchro -> j
+    long m_millisOff -> k
+    int m_next -> l
+    long mMillisNow -> m
+    java.lang.String configString -> b
+    int mSensorValue -> n
+    float[] gravity -> o
+    float[] lastval -> p
+    java.lang.String enumDefaultAccel(android.content.Context) -> a
+    java.lang.String enumSensors(android.content.Context) -> b
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void setState() -> a
+    void onResume() -> onResume
+    void onClickTest(android.view.View) -> onClickTest
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void startSensor() -> b
+    void stopSensor() -> c
+com.gradlspace.cys.activities.EmergencyActivity -> com.gradlspace.cys.activities.EmergencyActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onLowMemory() -> onLowMemory
+com.gradlspace.cys.activities.ErrorActivity -> com.gradlspace.cys.activities.ErrorActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onReportClick(android.view.View) -> onReportClick
+    void onOkClick(android.view.View) -> onOkClick
+com.gradlspace.cys.activities.EulaActivity -> com.gradlspace.cys.activities.EulaActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBackPressed() -> onBackPressed
+com.gradlspace.cys.activities.EulaActivity$1 -> com.gradlspace.cys.activities.ad:
+    com.gradlspace.cys.activities.EulaActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.gradlspace.cys.activities.EulaActivity$2 -> com.gradlspace.cys.activities.ae:
+    com.gradlspace.cys.activities.EulaActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.gradlspace.cys.activities.ExplorerActivity -> com.gradlspace.cys.activities.ExplorerActivity:
+    android.widget.ListAdapter m_adapter -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    void onStart() -> onStart
+com.gradlspace.cys.activities.ExplorerActivity$1 -> com.gradlspace.cys.activities.af:
+    com.gradlspace.cys.activities.ExplorerActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.ExplorerActivity$2 -> com.gradlspace.cys.activities.ag:
+    com.gradlspace.cys.activities.ExplorerActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.ExplorerActivity$3 -> com.gradlspace.cys.activities.ah:
+    com.gradlspace.cys.activities.ExplorerActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.IntroActivity -> com.gradlspace.cys.activities.IntroActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+com.gradlspace.cys.activities.IntroActivity$1 -> com.gradlspace.cys.activities.ai:
+    com.gradlspace.cys.activities.IntroActivity this$0 -> a
+    com.gradlspace.widgets.SafeViewFlipper val$flipper -> b
+    com.gradlspace.cys.activities.IntroActivity val$vthis -> c
+    void onClick(android.view.View) -> onClick
+com.gradlspace.cys.activities.IntroActivity$2 -> com.gradlspace.cys.activities.aj:
+    com.gradlspace.cys.activities.IntroActivity this$0 -> a
+    com.gradlspace.widgets.SafeViewFlipper val$flipper -> b
+    void onClick(android.view.View) -> onClick
+com.gradlspace.cys.activities.MonitorActivity -> com.gradlspace.cys.activities.MonitorActivity:
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator sCalibrationMode -> a
+    long sCalibrateNextTime -> b
+    com.gradlspace.cys.activities.MonitorActivity sThis -> c
+    boolean m_forceMonitor -> i
+    de.lme.plotview.PlotView mPlotView -> j
+    de.lme.plotview.SamplingPlot mActPlot -> k
+    de.lme.plotview.SamplingPlot mActPlotx -> l
+    de.lme.plotview.SamplingPlot mActPloty -> m
+    de.lme.plotview.SamplingPlot mActPlotz -> n
+    de.lme.plotview.SamplingPlot mActPlotUtil -> o
+    com.gradlspace.widgets.HypnogramView mHypnoView -> p
+    android.widget.TextView lblStatus -> q
+    android.widget.LinearLayout m_layoutInfo -> r
+    android.widget.Button m_btnInfo -> s
+    android.widget.TextView m_lblInfo -> t
+    android.widget.TextView m_lblPrefire -> u
+    android.widget.SeekBar m_sliderInfo -> v
+    boolean mIsDisplayOn -> w
+    com.gradlspace.cys.activities.MonitorActivity$MonitorBroadcastReceiver mBroadcastReceiver -> x
+    android.content.IntentFilter sTimeIntentFilter -> y
+    android.content.IntentFilter sBatteryIntentFilter -> z
+    android.hardware.Sensor mSensor -> A
+    android.hardware.SensorManager mSensorMan -> B
+    int mBatteryLevel -> d
+    int mBatteryTemp -> e
+    int mBatteryLevelStart -> f
+    java.lang.String tAction -> C
+    long m_gravFilteredMillis -> D
+    boolean m_gravFiltered -> E
+    long mNextShortMillis -> F
+    long mNextMediumMillis -> G
+    long mNextLongMillis -> H
+    long t_fireReturn -> I
+    double[] diffOp -> J
+    com.gradlspace.cys.TimeTrigger mTimeTrigger -> g
+    de.lme.plotview.LmeFilter$ImpDerivativeFilter dX -> K
+    de.lme.plotview.LmeFilter$ImpDerivativeFilter dY -> L
+    de.lme.plotview.LmeFilter$ImpDerivativeFilter dZ -> M
+    de.lme.plotview.LmeFilter$SavGolayFilter hX -> N
+    de.lme.plotview.LmeFilter$SavGolayFilter hY -> O
+    de.lme.plotview.LmeFilter$SavGolayFilter hZ -> P
+    de.lme.plotview.LmeFilter$AccuFilter wndint -> Q
+    de.lme.plotview.LmeFilter$MeanFilter mean -> R
+    java.lang.StringBuilder t_sbStat -> h
+    int[] $SWITCH_TABLE$com$gradlspace$cys$activities$MonitorActivity$Calibrator -> S
+    void saveFinalStream() -> b
+    void finalInit() -> c
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void onClickCalibrate(android.view.View) -> onClickCalibrate
+    void changeCalibrationMode(com.gradlspace.cys.activities.MonitorActivity$Calibrator) -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    void onDestroy() -> onDestroy
+    void onLowMemory() -> onLowMemory
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    void onBackPressed() -> onBackPressed
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void startReceivers() -> d
+    void startSensor() -> e
+    void stopReceivers() -> f
+    void stopSensor() -> g
+    void stopUI() -> h
+    void updateStatus() -> a
+    void access$0(com.gradlspace.cys.activities.MonitorActivity,java.lang.String) -> a
+    java.lang.String access$1(com.gradlspace.cys.activities.MonitorActivity) -> a
+    android.widget.TextView access$2(com.gradlspace.cys.activities.MonitorActivity) -> b
+    int[] $SWITCH_TABLE$com$gradlspace$cys$activities$MonitorActivity$Calibrator() -> i
+    com.gradlspace.widgets.HypnogramView access$4(com.gradlspace.cys.activities.MonitorActivity) -> c
+com.gradlspace.cys.activities.MonitorActivity$1 -> com.gradlspace.cys.activities.ak:
+    com.gradlspace.cys.activities.MonitorActivity this$0 -> a
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+com.gradlspace.cys.activities.MonitorActivity$2 -> com.gradlspace.cys.activities.al:
+    com.gradlspace.cys.activities.MonitorActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.MonitorActivity$3 -> com.gradlspace.cys.activities.am:
+    com.gradlspace.cys.activities.MonitorActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.MonitorActivity$4 -> com.gradlspace.cys.activities.an:
+    com.gradlspace.cys.activities.MonitorActivity this$0 -> a
+    void onPhaseChanged(com.gradlspace.cys.SleepStage$SleepPhase,com.gradlspace.cys.SleepStage$SleepPhase) -> a
+com.gradlspace.cys.activities.MonitorActivity$Calibrator -> com.gradlspace.cys.activities.ao:
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator NULL -> a
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator INIT -> b
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator EXPLAIN -> c
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator WAIT_FOR_PREPARE -> d
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator PLAY_SIGNAL -> e
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator WAIT_FOR_MOVEMENT -> f
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator FAILED -> g
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator FINISHED -> h
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator[] ENUM$VALUES -> i
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator[] values() -> values
+    com.gradlspace.cys.activities.MonitorActivity$Calibrator valueOf(java.lang.String) -> valueOf
+com.gradlspace.cys.activities.MonitorActivity$MonitorBroadcastReceiver -> com.gradlspace.cys.activities.ap:
+    com.gradlspace.cys.activities.MonitorActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.gradlspace.cys.activities.OptionsActivity -> com.gradlspace.cys.activities.OptionsActivity:
+    com.gradlspace.widgets.AlarmPreference mApref0 -> a
+    com.gradlspace.widgets.AlarmPreference mApref1 -> b
+    com.gradlspace.widgets.AlarmPreference mApref2 -> c
+    com.gradlspace.widgets.AlarmPreference mApref3 -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onStart() -> onStart
+    void onPause() -> onPause
+    boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+    com.gradlspace.widgets.AlarmPreference access$0(com.gradlspace.cys.activities.OptionsActivity) -> a
+    com.gradlspace.widgets.AlarmPreference access$1(com.gradlspace.cys.activities.OptionsActivity) -> b
+    com.gradlspace.widgets.AlarmPreference access$2(com.gradlspace.cys.activities.OptionsActivity) -> c
+    com.gradlspace.widgets.AlarmPreference access$3(com.gradlspace.cys.activities.OptionsActivity) -> d
+com.gradlspace.cys.activities.OptionsActivity$1 -> com.gradlspace.cys.activities.aq:
+    com.gradlspace.cys.activities.OptionsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.gradlspace.cys.activities.OptionsActivity$2 -> com.gradlspace.cys.activities.ar:
+    com.gradlspace.cys.activities.OptionsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.gradlspace.cys.activities.OptionsActivity$3 -> com.gradlspace.cys.activities.as:
+    com.gradlspace.cys.activities.OptionsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.gradlspace.cys.activities.OptionsActivity$4 -> com.gradlspace.cys.activities.at:
+    com.gradlspace.cys.activities.OptionsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.gradlspace.cys.activities.OptionsActivity$5 -> com.gradlspace.cys.activities.au:
+    com.gradlspace.cys.activities.OptionsActivity this$0 -> a
+    boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+com.gradlspace.cys.activities.OptionsActivity$6 -> com.gradlspace.cys.activities.av:
+    com.gradlspace.cys.activities.OptionsActivity this$0 -> a
+    boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+com.gradlspace.cys.activities.OptionsActivity$7 -> com.gradlspace.cys.activities.aw:
+    com.gradlspace.cys.activities.OptionsActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.OptionsActivity$8 -> com.gradlspace.cys.activities.ax:
+    com.gradlspace.cys.activities.OptionsActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.gradlspace.cys.activities.RateActivity -> com.gradlspace.cys.activities.RateActivity:
+    boolean rateSleep -> a
+    boolean rateDream -> b
+    com.gradlspace.widgets.HypnogramView mHypnoView -> c
+    android.widget.RatingBar ratingSleep -> d
+    android.widget.RatingBar ratingDream -> e
+    android.widget.Spinner cmbEmotion -> f
+    android.widget.EditText txtHeadline -> g
+    android.widget.EditText txtText -> h
+    android.widget.TextView lblSleepDuration -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClickOk(android.view.View) -> onClickOk
+    void onClickCancel(android.view.View) -> onClickCancel
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onLowMemory() -> onLowMemory
+com.gradlspace.cys.activities.SNSActivity -> com.gradlspace.cys.activities.SNSActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onLowMemory() -> onLowMemory
+com.gradlspace.cys.activities.SleepLogActivity -> com.gradlspace.cys.activities.SleepLogActivity:
+    android.widget.ListAdapter m_adapter -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    void onStart() -> onStart
+com.gradlspace.cys.activities.StatsActivity -> com.gradlspace.cys.activities.StatsActivity:
+    de.lme.plotview.PlotView m_plotView -> a
+    com.gradlspace.widgets.HypnogramView[] m_hypnoViews -> b
+    com.gradlspace.cys.Hypnogram[] m_hypnos -> c
+    de.lme.plotview.Plot2D m_statsPlot -> d
+    android.widget.TextView m_txtStats -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onLowMemory() -> onLowMemory
+com.gradlspace.cys.activities.TriggerActivity -> com.gradlspace.cys.activities.TriggerActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onLowMemory() -> onLowMemory
+com.gradlspace.cys.activities.ViewerActivity -> com.gradlspace.cys.activities.ViewerActivity:
+    de.lme.plotview.PlotView mPlotView -> a
+    com.gradlspace.widgets.HypnogramView mHypnoView -> b
+    com.gradlspace.cys.Hypnogram mHypnogram -> c
+    de.lme.plotview.Plot1D mSensorPlot -> d
+    com.gradlspace.cys.Dream mDream -> e
+    android.widget.TextView mDreamDate -> f
+    android.widget.TextView mDreamTheme -> g
+    android.widget.TextView mDreamEmotion -> h
+    android.widget.TextView mDreamRating -> i
+    android.widget.TextView mDreamText -> j
+    android.app.ProgressDialog progressDialog -> k
+    com.gradlspace.cys.activities.ViewerActivity$LoadSensorPlotTask m_loadTask -> l
+    void onCreate(android.os.Bundle) -> onCreate
+    android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    void onPrepareDialog(int,android.app.Dialog) -> onPrepareDialog
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void cleanup() -> b
+    void onDestroy() -> onDestroy
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onLowMemory() -> onLowMemory
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    android.app.ProgressDialog access$0(com.gradlspace.cys.activities.ViewerActivity) -> a
+    de.lme.plotview.Plot1D access$1() -> a
+    void access$2(de.lme.plotview.Plot1D) -> a
+    de.lme.plotview.PlotView access$3(com.gradlspace.cys.activities.ViewerActivity) -> b
+com.gradlspace.cys.activities.ViewerActivity$LoadSensorPlotTask -> com.gradlspace.cys.activities.ay:
+    de.lme.plotview.PlotView$PlotProgressListener mListener -> b
+    com.gradlspace.cys.activities.ViewerActivity this$0 -> a
+    void onCancelled() -> onCancelled
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+    void access$3(com.gradlspace.cys.activities.ViewerActivity$LoadSensorPlotTask,java.lang.Object[]) -> a
+    com.gradlspace.cys.activities.ViewerActivity access$5(com.gradlspace.cys.activities.ViewerActivity$LoadSensorPlotTask) -> a
+com.gradlspace.cys.activities.ViewerActivity$LoadSensorPlotTask$1 -> com.gradlspace.cys.activities.az:
+    int m_maxProgress -> b
+    com.gradlspace.cys.activities.ViewerActivity$LoadSensorPlotTask this$1 -> a
+    void onUpdateProgress(int) -> a
+    void onSetMaxProgress(int) -> b
+    boolean isCancelled() -> a
+com.gradlspace.widgets.AlarmPreference -> com.gradlspace.widgets.AlarmPreference:
+    int mAlarmIdx -> a
+    android.widget.ToggleButton btnEnabled -> b
+    android.widget.TextView lblTitleText -> c
+    android.view.View$OnClickListener mClickAreaListener -> d
+    void initPreference(int) -> a
+    int getAlarmId() -> a
+    void setOnClickAreaListener(android.view.View$OnClickListener) -> a
+    void onBindView(android.view.View) -> onBindView
+    void updateDisplay() -> b
+    java.lang.Object onGetDefaultValue(android.content.res.TypedArray,int) -> onGetDefaultValue
+    void onSetInitialValue(boolean,java.lang.Object) -> onSetInitialValue
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    int access$0(com.gradlspace.widgets.AlarmPreference) -> a
+    android.widget.ToggleButton access$1(com.gradlspace.widgets.AlarmPreference) -> b
+com.gradlspace.widgets.AlarmPreference$1 -> com.gradlspace.widgets.a:
+    com.gradlspace.widgets.AlarmPreference this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.gradlspace.widgets.AlarmPreference$SavedState -> com.gradlspace.widgets.AlarmPreference$SavedState:
+    int alarmIdx -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+com.gradlspace.widgets.AlarmPreference$SavedState$1 -> com.gradlspace.widgets.b:
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+com.gradlspace.widgets.HypnogramView -> com.gradlspace.widgets.HypnogramView:
+    com.gradlspace.cys.Hypnogram mHypnogram -> c
+    boolean mDrawAxes -> d
+    android.view.GestureDetector mGestureDetector -> e
+    android.view.ScaleGestureDetector mScaleGeDet -> f
+    float mScaleLeftRight -> g
+    float mScaleUpDown -> h
+    float mScaleInOut -> i
+    android.graphics.Paint bgShader -> a
+    android.graphics.Paint paintFrame -> b
+    android.graphics.Paint mShader -> j
+    android.graphics.Paint mGraphPaint -> k
+    android.graphics.Paint mAvgPaint -> l
+    android.graphics.Paint mTextPaint -> m
+    android.graphics.Paint mStageTextPaint -> n
+    int _size -> o
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void setHypnogram(com.gradlspace.cys.Hypnogram) -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void drawRegion$169f2390(android.graphics.Canvas,float,float) -> a
+    void drawStage$7a209a89$56e62fe9(com.gradlspace.cys.SleepStage$SleepPhase,android.graphics.Canvas,float,float) -> a
+    float access$0(com.gradlspace.widgets.HypnogramView) -> a
+    void access$1(com.gradlspace.widgets.HypnogramView,float) -> a
+    void access$2(com.gradlspace.widgets.HypnogramView,float) -> b
+    void access$3(com.gradlspace.widgets.HypnogramView,float) -> c
+    float access$4(com.gradlspace.widgets.HypnogramView) -> b
+    float access$5(com.gradlspace.widgets.HypnogramView) -> c
+com.gradlspace.widgets.HypnogramView$GestureListener -> com.gradlspace.widgets.c:
+    com.gradlspace.widgets.HypnogramView this$0 -> a
+    boolean onSingleTapUp(android.view.MotionEvent) -> onSingleTapUp
+    void onShowPress(android.view.MotionEvent) -> onShowPress
+    void onLongPress(android.view.MotionEvent) -> onLongPress
+    boolean onDoubleTapEvent(android.view.MotionEvent) -> onDoubleTapEvent
+    boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onScroll
+    boolean onDown(android.view.MotionEvent) -> onDown
+    boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+com.gradlspace.widgets.HypnogramView$ScaleListener -> com.gradlspace.widgets.d:
+    com.gradlspace.widgets.HypnogramView this$0 -> a
+    boolean onScale(android.view.ScaleGestureDetector) -> onScale
+com.gradlspace.widgets.SafeViewFlipper -> com.gradlspace.widgets.SafeViewFlipper:
+    void onDetachedFromWindow() -> onDetachedFromWindow
+com.gradlspace.widgets.TimeEdit -> com.gradlspace.widgets.TimeEdit:
+    android.text.format.Time mTime -> b
+    android.widget.EditText mHourSlave -> c
+    android.widget.SeekBar mSeekerSlave -> d
+    boolean m_SeekerLock -> a
+    android.text.format.Time parseTimeString(java.lang.String) -> a
+    android.text.format.Time getTime() -> a
+    void initTimeEdit() -> c
+    void reflectTime() -> b
+    void setHourSlave(android.widget.EditText) -> a
+    void setSeekerSlave(android.widget.SeekBar) -> a
+    void setTime(long,android.view.View) -> a
+    void setTime(android.text.format.Time,android.view.View) -> a
+    void updateHourSlaveText() -> d
+    void updateSeekerSlave() -> e
+    android.widget.EditText access$0(com.gradlspace.widgets.TimeEdit) -> a
+com.gradlspace.widgets.TimeEdit$1 -> com.gradlspace.widgets.e:
+    com.gradlspace.widgets.TimeEdit this$0 -> a
+    void onFocusChange(android.view.View,boolean) -> onFocusChange
+com.gradlspace.widgets.TimeEdit$2 -> com.gradlspace.widgets.f:
+    com.gradlspace.widgets.TimeEdit this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.gradlspace.widgets.TimeEdit$3 -> com.gradlspace.widgets.g:
+    com.gradlspace.widgets.TimeEdit this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+com.gradlspace.widgets.TimeEdit$4 -> com.gradlspace.widgets.h:
+    android.text.format.Time mStartTime -> b
+    com.gradlspace.widgets.TimeEdit this$0 -> a
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+de.lme.plotview.BooleanValueList -> de.lme.plotview.a:
+    boolean[] values -> a
+    int add(boolean) -> a
+    void clear() -> clear
+    boolean addAll(java.util.Collection) -> addAll
+    boolean addAll(int,java.util.Collection) -> addAll
+    boolean contains(java.lang.Object) -> contains
+    boolean containsAll(java.util.Collection) -> containsAll
+    int indexOf(java.lang.Object) -> indexOf
+    java.util.Iterator iterator() -> iterator
+    int lastIndexOf(java.lang.Object) -> lastIndexOf
+    java.util.ListIterator listIterator() -> listIterator
+    java.util.ListIterator listIterator(int) -> listIterator
+    boolean remove(java.lang.Object) -> remove
+    boolean removeAll(java.util.Collection) -> removeAll
+    boolean retainAll(java.util.Collection) -> retainAll
+    java.lang.Boolean set(int,java.lang.Boolean) -> a
+    java.util.List subList(int,int) -> subList
+    java.lang.Object[] toArray() -> toArray
+    java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+    java.lang.Object get(int) -> get
+    boolean add(java.lang.Object) -> add
+    void add(int,java.lang.Object) -> add
+    java.lang.Object set(int,java.lang.Object) -> set
+    java.lang.Object remove(int) -> remove
+de.lme.plotview.CircularValueList -> de.lme.plotview.b:
+    int sizeMax -> b
+    int EOR -> c
+    int head -> d
+    int tail -> e
+    int num -> f
+    int minIdx -> g
+    int maxIdx -> h
+    boolean maintainMinMax -> i
+    boolean maintainSum -> j
+    void init(int,boolean,boolean) -> a
+    void clear() -> clear
+    int normIdx(int) -> a
+    int tailDistance(int) -> b
+    int size() -> size
+    boolean isEmpty() -> isEmpty
+de.lme.plotview.FloatValueList -> de.lme.plotview.c:
+    float[] values -> a
+    float minValue -> k
+    float maxValue -> l
+    float rangeMinMax -> m
+    double sum -> n
+    int tIter -> o
+    int add(float) -> a
+    void clear() -> clear
+    void copy(java.util.ArrayList) -> a
+    float getMean() -> a
+    float getIndirect(int) -> c
+    boolean addAll(java.util.Collection) -> addAll
+    boolean addAll(int,java.util.Collection) -> addAll
+    boolean contains(java.lang.Object) -> contains
+    boolean containsAll(java.util.Collection) -> containsAll
+    int indexOf(java.lang.Object) -> indexOf
+    java.util.Iterator iterator() -> iterator
+    int lastIndexOf(java.lang.Object) -> lastIndexOf
+    java.util.ListIterator listIterator() -> listIterator
+    java.util.ListIterator listIterator(int) -> listIterator
+    boolean remove(java.lang.Object) -> remove
+    boolean removeAll(java.util.Collection) -> removeAll
+    boolean retainAll(java.util.Collection) -> retainAll
+    java.util.List subList(int,int) -> subList
+    java.lang.Object[] toArray() -> toArray
+    java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+    int add(long) -> a
+    java.lang.Object get(int) -> get
+    void add(int,java.lang.Object) -> add
+    boolean add(java.lang.Object) -> add
+    java.lang.Object set(int,java.lang.Object) -> set
+    java.lang.Object remove(int) -> remove
+de.lme.plotview.LmeFilter -> de.lme.plotview.d:
+    double[] a -> a
+    double[] b -> b
+    double[] y -> c
+    double[] x -> d
+    int t_iter -> e
+    double next(double) -> a
+de.lme.plotview.LmeFilter$AccuFilter -> de.lme.plotview.e:
+    double next(double) -> a
+de.lme.plotview.LmeFilter$ImpDerivativeFilter -> de.lme.plotview.f:
+    double next(double) -> a
+de.lme.plotview.LmeFilter$MeanFilter -> de.lme.plotview.g:
+    int num -> e
+    int maxNum -> f
+    double next(double) -> a
+de.lme.plotview.LmeFilter$SavGolayFilter -> de.lme.plotview.h:
+    double next(double) -> a
+de.lme.plotview.LmeFilter$WndIntFilter -> de.lme.plotview.i:
+    de.lme.plotview.FloatValueList m_int -> e
+    double next(double) -> a
+de.lme.plotview.LongValueList -> de.lme.plotview.j:
+    long[] values -> a
+    long minValue -> k
+    long maxValue -> l
+    long rangeMinMax -> m
+    int tIter -> n
+    int add(long) -> a
+    void clear() -> clear
+    void copy(java.util.ArrayList) -> a
+    long getIndirect(int) -> c
+    boolean addAll(java.util.Collection) -> addAll
+    boolean addAll(int,java.util.Collection) -> addAll
+    boolean contains(java.lang.Object) -> contains
+    boolean containsAll(java.util.Collection) -> containsAll
+    int indexOf(java.lang.Object) -> indexOf
+    java.util.Iterator iterator() -> iterator
+    int lastIndexOf(java.lang.Object) -> lastIndexOf
+    java.util.ListIterator listIterator() -> listIterator
+    java.util.ListIterator listIterator(int) -> listIterator
+    boolean remove(java.lang.Object) -> remove
+    boolean removeAll(java.util.Collection) -> removeAll
+    boolean retainAll(java.util.Collection) -> retainAll
+    java.util.List subList(int,int) -> subList
+    java.lang.Object[] toArray() -> toArray
+    java.lang.Object[] toArray(java.lang.Object[]) -> toArray
+    java.lang.Object get(int) -> get
+    boolean add(java.lang.Object) -> add
+    void add(int,java.lang.Object) -> add
+    java.lang.Object set(int,java.lang.Object) -> set
+    java.lang.Object remove(int) -> remove
+de.lme.plotview.Plot -> de.lme.plotview.k:
+    java.util.concurrent.locks.ReentrantLock m_dataLock -> a
+    de.lme.plotview.FloatValueList values -> b
+    de.lme.plotview.BooleanValueList inspectValues -> c
+    java.util.ArrayList m_markers -> d
+    java.lang.String plotTitle -> e
+    de.lme.plotview.Plot$PlotAxis valueAxis -> f
+    boolean isVisible -> g
+    android.graphics.Paint m_paint -> h
+    de.lme.plotview.Plot$PlotStyle style -> i
+    java.util.EnumSet flags -> j
+    int m_maxCachedEntries -> k
+    int m_desiredViewportIdxNum -> l
+    de.lme.plotview.PlotView$PlotScrollPolicy scrollHow -> m
+    de.lme.plotview.Plot$PlotChangedListener m_plotChangeListener -> n
+    java.lang.String m_file -> o
+    android.graphics.RectF m_markerOverlay -> p
+    float m_markerLast -> q
+    boolean m_markerInvalid -> r
+    long m_xAxisMin -> s
+    long m_xAxisMax -> t
+    float m_yAxisMin -> u
+    float m_yAxisMax -> v
+    int m_idxStart -> w
+    int m_idxEnd -> x
+    int m_idxNum -> y
+    double m_numIdxPerPixel -> z
+    int m_xIdxTrans -> A
+    double m_xIdxScale -> B
+    float m_yPxTrans -> C
+    double m_yPxScale -> D
+    int tNum -> E
+    de.lme.plotview.Plot$PlotMarker tMark -> F
+    int tIdx -> G
+    android.graphics.RectF tRect -> H
+    int tIdxAxis -> I
+    void setPaint(android.graphics.Paint) -> a
+    void setFile(java.lang.String) -> a
+    android.graphics.Paint generatePlotPaint() -> a
+    android.graphics.Paint generatePlotPaint(float,int,int,int,int) -> a
+    void plotChanged() -> b
+    void setMarker$1030aa05(int) -> a
+    de.lme.plotview.Plot$PlotMarker getMarker(int) -> b
+    void drawXAxis(android.graphics.Canvas,de.lme.plotview.PlotView$PlotSurface,de.lme.plotview.Plot$PlotAxis,boolean) -> a
+    void drawYAxis(android.graphics.Canvas,de.lme.plotview.PlotView$PlotSurface,de.lme.plotview.Plot$PlotAxis,boolean) -> b
+    void drawGlobalMarks$672f0ca1() -> c
+    void getViewport(de.lme.plotview.PlotView$PlotSurface) -> a
+    void draw(android.graphics.Canvas,de.lme.plotview.PlotView$PlotSurface) -> a
+    java.lang.String formatAxisText(de.lme.plotview.Plot$PlotAxis,int) -> a
+    void drawAxis(android.graphics.Canvas,de.lme.plotview.PlotView$PlotSurface,boolean,boolean) -> a
+de.lme.plotview.Plot$PlotAxis -> de.lme.plotview.l:
+    java.lang.String title -> a
+    java.lang.String unitName -> b
+    float multiplier -> c
+    android.graphics.Paint paint -> d
+    android.graphics.Paint paintText -> e
+de.lme.plotview.Plot$PlotChangedListener -> de.lme.plotview.m:
+    de.lme.plotview.PlotView mAttachedPlotView -> a
+    void onAttach(de.lme.plotview.PlotView) -> a
+    void onPlotChanged() -> a
+de.lme.plotview.Plot$PlotFlag -> de.lme.plotview.n:
+    de.lme.plotview.Plot$PlotFlag LINK_ASPECT -> a
+    de.lme.plotview.Plot$PlotFlag[] ENUM$VALUES -> b
+    de.lme.plotview.Plot$PlotFlag[] values() -> values
+    de.lme.plotview.Plot$PlotFlag valueOf(java.lang.String) -> valueOf
+de.lme.plotview.Plot$PlotMarker -> de.lme.plotview.o:
+    int m_index -> a
+    android.graphics.Paint m_paint -> b
+    de.lme.plotview.Plot m_plot -> c
+de.lme.plotview.Plot$PlotStyle -> de.lme.plotview.p:
+    de.lme.plotview.Plot$PlotStyle POINT -> a
+    de.lme.plotview.Plot$PlotStyle CIRCLE -> b
+    de.lme.plotview.Plot$PlotStyle RECT -> c
+    de.lme.plotview.Plot$PlotStyle RECT_VALUE_FILLED -> d
+    de.lme.plotview.Plot$PlotStyle LINE -> e
+    de.lme.plotview.Plot$PlotStyle STAIR -> f
+    de.lme.plotview.Plot$PlotStyle BAR -> g
+    de.lme.plotview.Plot$PlotStyle STEM -> h
+    de.lme.plotview.Plot$PlotStyle CROSS -> i
+    de.lme.plotview.Plot$PlotStyle STAR -> j
+    de.lme.plotview.Plot$PlotStyle TEXT -> k
+    de.lme.plotview.Plot$PlotStyle[] ENUM$VALUES -> l
+    de.lme.plotview.Plot$PlotStyle[] values() -> values
+    de.lme.plotview.Plot$PlotStyle valueOf(java.lang.String) -> valueOf
+de.lme.plotview.Plot1D -> de.lme.plotview.q:
+    de.lme.plotview.LongValueList x -> E
+    de.lme.plotview.Plot$PlotAxis xAxis -> F
+    int tIdx -> G
+    int tPixelIdx -> H
+    int tRealIdx -> I
+    float tppValue -> J
+    float tppValueMax -> K
+    float tppValueMin -> L
+    de.lme.plotview.Plot$PlotMarker tMarker -> M
+    android.graphics.Path tPath -> N
+    int tppIdxMin -> O
+    int tppIdxMax -> P
+    android.text.format.Time tTime -> Q
+    android.graphics.RectF tRect -> R
+    void setAxis(java.lang.String,java.lang.String,float,java.lang.String,java.lang.String,float) -> a
+    void addValueFast(long,long) -> a
+    void addValue(long,long) -> b
+    void addValue(float,long) -> a
+    void draw(android.graphics.Canvas,de.lme.plotview.PlotView$PlotSurface) -> a
+    void getViewport(de.lme.plotview.PlotView$PlotSurface) -> a
+    java.lang.String formatAxisText(de.lme.plotview.Plot$PlotAxis,int) -> a
+    void drawAxis(android.graphics.Canvas,de.lme.plotview.PlotView$PlotSurface,boolean,boolean) -> a
+    boolean saveToFile$62dc3a75(android.content.Context,java.lang.String) -> a
+    de.lme.plotview.Plot1D create$3513b255(java.lang.String,int,de.lme.plotview.PlotView$PlotProgressListener) -> a
+de.lme.plotview.Plot2D -> de.lme.plotview.r:
+    de.lme.plotview.FloatValueList y -> G
+    de.lme.plotview.Plot$PlotAxis yAxis -> H
+    long m_xRangeStart -> I
+    long m_xRangeEnd -> J
+    float m_yRangeStart -> K
+    float m_yRangeEnd -> L
+    float tX -> M
+    float tY -> N
+    float tVal -> O
+    android.graphics.Path tPath -> P
+    android.graphics.RectF tRect -> Q
+    int tIdx -> R
+    int[] $SWITCH_TABLE$de$lme$plotview$Plot$PlotStyle -> S
+    void setAxis(java.lang.String,java.lang.String,float,java.lang.String,java.lang.String,float) -> a
+    void setViewport$398a960b() -> d
+    void addValue(float,long,float) -> a
+    void draw(android.graphics.Canvas,de.lme.plotview.PlotView$PlotSurface) -> a
+    void getViewport(de.lme.plotview.PlotView$PlotSurface) -> a
+    java.lang.String formatAxisText(de.lme.plotview.Plot$PlotAxis,int) -> a
+    void drawAxis(android.graphics.Canvas,de.lme.plotview.PlotView$PlotSurface,boolean,boolean) -> a
+    int[] $SWITCH_TABLE$de$lme$plotview$Plot$PlotStyle() -> e
+de.lme.plotview.PlotView -> de.lme.plotview.PlotView:
+    java.lang.String NEWLINE -> a
+    java.util.ArrayList m_plots -> j
+    long m_maxRedrawRate -> k
+    long m_lastRedrawMillis -> l
+    java.util.EnumSet m_plotFlags -> m
+    android.graphics.Paint m_defaultPaint -> n
+    android.graphics.Paint m_shader -> o
+    android.graphics.Paint s_mapPaint -> b
+    android.graphics.Paint s_overlayPaint -> c
+    android.graphics.Paint s_overlayInvPaint -> d
+    android.graphics.Paint s_markerPaint -> e
+    android.graphics.Paint s_marker2Paint -> f
+    android.graphics.Paint s_markerTextPaint -> g
+    android.view.GestureDetector m_gestureDetector -> p
+    android.view.ScaleGestureDetector m_scaleGeDet -> q
+    boolean m_isYScale -> r
+    de.lme.plotview.PlotView$PlotSurface m_surface -> h
+    de.lme.plotview.PlotView$PlotViewGroup m_group -> i
+    int t_idx -> s
+    int t_size -> t
+    int t_iter -> u
+    int t_drawSize -> v
+    android.view.animation.Transformation tAnimTrafo -> w
+    float[] tTrafoMat -> x
+    void initPlotView(android.content.Context) -> a
+    void addFlag(de.lme.plotview.PlotView$Flags) -> a
+    int attachPlot(de.lme.plotview.Plot) -> a
+    de.lme.plotview.Plot getFirstVisiblePlot() -> c
+    int getNumPlots() -> a
+    void requestRedraw$1385ff() -> b
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void removeFlag(de.lme.plotview.PlotView$Flags) -> b
+    boolean access$0(de.lme.plotview.PlotView) -> a
+    void access$1(de.lme.plotview.PlotView,boolean) -> a
+de.lme.plotview.PlotView$Flags -> de.lme.plotview.s:
+    de.lme.plotview.PlotView$Flags DRAW_AXES -> a
+    de.lme.plotview.PlotView$Flags DRAW_GRID -> b
+    de.lme.plotview.PlotView$Flags DRAW_MAP -> c
+    de.lme.plotview.PlotView$Flags ENABLE_GESTURES -> d
+    de.lme.plotview.PlotView$Flags DISABLE_Y_USERSCROLL -> e
+    de.lme.plotview.PlotView$Flags ENABLE_AUTO_SCROLL -> f
+    de.lme.plotview.PlotView$Flags ENABLE_AUTO_ZOOM_Y -> g
+    de.lme.plotview.PlotView$Flags ENABLE_AUTO_ZOOM_X -> h
+    de.lme.plotview.PlotView$Flags ENABLE_AUTO_RESET -> i
+    java.util.EnumSet DEFAULT -> j
+    de.lme.plotview.PlotView$Flags[] ENUM$VALUES -> k
+    de.lme.plotview.PlotView$Flags[] values() -> values
+    de.lme.plotview.PlotView$Flags valueOf(java.lang.String) -> valueOf
+de.lme.plotview.PlotView$GestureListener -> de.lme.plotview.t:
+    de.lme.plotview.PlotView this$0 -> a
+    boolean onDoubleTapEvent(android.view.MotionEvent) -> onDoubleTapEvent
+    boolean onDoubleTap(android.view.MotionEvent) -> onDoubleTap
+    boolean onDown(android.view.MotionEvent) -> onDown
+    boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+    void onLongPress(android.view.MotionEvent) -> onLongPress
+    boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onScroll
+    void onShowPress(android.view.MotionEvent) -> onShowPress
+    boolean onSingleTapUp(android.view.MotionEvent) -> onSingleTapUp
+    de.lme.plotview.PlotView access$0(de.lme.plotview.PlotView$GestureListener) -> a
+de.lme.plotview.PlotView$GestureListener$1 -> de.lme.plotview.u:
+    de.lme.plotview.PlotView$GestureListener this$1 -> a
+    android.widget.EditText val$input -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+de.lme.plotview.PlotView$GestureListener$2 -> de.lme.plotview.v:
+    de.lme.plotview.PlotView$GestureListener this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+de.lme.plotview.PlotView$PlotProgressListener -> de.lme.plotview.w:
+    void onUpdateProgress(int) -> a
+    void onSetMaxProgress(int) -> b
+    boolean isCancelled() -> a
+de.lme.plotview.PlotView$PlotScrollPolicy -> de.lme.plotview.x:
+    de.lme.plotview.PlotView$PlotScrollPolicy DEFAULT -> a
+    de.lme.plotview.PlotView$PlotScrollPolicy OVERRUN -> b
+    de.lme.plotview.PlotView$PlotScrollPolicy DROP -> c
+    de.lme.plotview.PlotView$PlotScrollPolicy GAP -> d
+    de.lme.plotview.PlotView$PlotScrollPolicy[] ENUM$VALUES -> e
+    de.lme.plotview.PlotView$PlotScrollPolicy[] values() -> values
+    de.lme.plotview.PlotView$PlotScrollPolicy valueOf(java.lang.String) -> valueOf
+de.lme.plotview.PlotView$PlotSurface -> de.lme.plotview.y:
+    int viewWidth -> a
+    int viewHeight -> b
+    int width -> c
+    int height -> d
+    float xTrans -> e
+    float yTrans -> f
+    float xScale -> g
+    float yScale -> h
+    double xScrollAmp -> i
+    double yScrollAmp -> j
+    android.view.animation.TranslateAnimation xFlinger -> k
+    android.view.animation.ScaleAnimation xAnimScale -> l
+    de.lme.plotview.Plot masterPlot -> m
+    android.view.animation.DecelerateInterpolator m_decInterpolator -> o
+    android.view.animation.LinearInterpolator m_linInterpolator -> p
+    de.lme.plotview.PlotView this$0 -> n
+    void reset$1385ff() -> a
+    void animateXTrans(float,float,long) -> a
+    void animateXScale$483d332f(float,float) -> a
+de.lme.plotview.PlotView$PlotViewGroup -> de.lme.plotview.z:
+    java.util.ArrayList m_links -> a
+    boolean m_linkY -> b
+    void propagateScale$16b47022(float,boolean) -> a
+    void propagateTrans$16b4250e(float,float) -> a
+de.lme.plotview.PlotView$ScaleGestDetector -> de.lme.plotview.aa:
+    float m_xRange -> b
+    float m_yRange -> c
+    de.lme.plotview.PlotView this$0 -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+de.lme.plotview.PlotView$ScaleListener -> de.lme.plotview.ab:
+    float m_lastScaleFactor -> b
+    de.lme.plotview.PlotView this$0 -> a
+    boolean onScale(android.view.ScaleGestureDetector) -> onScale
+de.lme.plotview.SamplingPlot -> de.lme.plotview.ac:
+    void setViewport$255f295() -> d

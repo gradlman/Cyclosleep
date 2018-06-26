@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center_vertical|fill_horizontal" android:minWidth="180dp">
+
+    <SeekBar
+        android:id="@+id/sliderAlarm"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_margin="10dp" android:minWidth="200dp" android:max="20" android:progressDrawable="@drawable/progress_horizontal" android:paddingLeft="20dp" android:paddingRight="20dp"/>
+
+    <de.lme.plotview.PlotView
+        android:id="@+id/plotViewCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bg_static" android:layout_margin="20dp" android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/lblAlarmMath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:layout_margin="15dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

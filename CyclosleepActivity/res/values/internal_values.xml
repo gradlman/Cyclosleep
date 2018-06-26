@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="timeMediumArrayValues">
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="prefOnSleepArrayValues">
+        <item>ask</item>
+        <item>mon</item>
+        <item>hide</item>
+        <item>none</item>
+    </string-array>
+    <string-array name="prefCommitArrayValues">
+        <item>slider</item>
+        <item>count</item>
+        <item>math</item>
+        <item>none</item>
+    </string-array>
+    <string-array name="prefCrippleModesValues">
+        <item>preDisp</item>
+        <item>power</item>
+        <item>none</item>
+    </string-array>
+    <string-array name="prefSoundArrayValues">
+        <item>none</item>
+        <item>int</item>
+        <item>file</item>
+        <item>ring</item>
+        <item>stream</item>
+        <item>rnd</item>
+        <item>none</item>
+    </string-array>
+
+    <!-- Lövheim emotion cube coords -->
+    <string-array name="arrayDreamEmotionValues">
+        <item>000</item>
+        <item>001</item>
+        <item>010</item>
+        <item>011</item>
+        <item>100</item>
+        <item>101</item>
+        <item>110</item>
+        <item>111</item>
+    </string-array>
+
+</resources>

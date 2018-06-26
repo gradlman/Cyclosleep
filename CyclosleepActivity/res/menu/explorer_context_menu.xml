@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item android:id="@+id/view" android:icon="@drawable/ic_menu_view" android:title="@string/textView"></item>
+	<item android:id="@+id/email" android:icon="@drawable/ic_menu_compose" android:title="@string/textEmail"></item>
+	<item android:id="@+id/share" android:icon="@drawable/ic_menu_upload" android:title="@string/textShare"></item>
+	<item android:id="@+id/sendxdf" android:icon="@drawable/ic_menu_compose" android:title="@string/textSendXDF" android:enabled="false"></item>
+	<item android:id="@+id/sendedf" android:icon="@drawable/ic_menu_compose" android:title="@string/textSendEDF" android:enabled="false"></item>
+	<item android:id="@+id/delete" android:icon="@drawable/ic_menu_delete" android:title="@string/textDelete"></item>
+	
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" android:layout_gravity="fill_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_marginBottom="5dp" android:layout_marginTop="5dp">
+
+        <ToggleButton
+            android:id="@+id/btnEnabled"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/toggle_button"
+            android:text="ToggleButton" />
+
+        <LinearLayout
+            android:id="@+id/clickArea"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@+id/btnEnabled" android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_alarm" />
+
+            <LinearLayout
+                android:id="@+id/innerFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+android:id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                        android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="@color/color_text_important"/>
+
+                    <TextView
+                        android:id="@+id/lblTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                        android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="16dp" android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+android:id/summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:lines="1"
+                    android:text="Small Text"
+                    android:textSize="12dp" android:textColor="@color/color_text_static"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

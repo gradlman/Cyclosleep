@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textIntroName"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:layout_marginBottom="20dp" android:background="@drawable/bg_static"/>
+
+    <com.gradlspace.widgets.SafeViewFlipper
+        android:id="@+id/flipperIntro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:measureAllChildren="false" android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layoutIntro00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblIntro00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textIntroWelcome"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:measureAllChildren="false" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout08"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="none"
+                    android:gravity="fill_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/textIntroShort"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:typeface="serif" />
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/beds" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textIntroPart02"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:typeface="serif" android:autoLink="web"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutIntro99"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblIntro99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:ellipsize="none"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/textIntroPart99"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+    </com.gradlspace.widgets.SafeViewFlipper>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="@drawable/def_border_u">
+
+        <Button
+            android:id="@+id/btnIntroNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/textContinue" android:minWidth="100dp" android:background="@drawable/btn_default" android:textColor="@color/color_button_default"/>
+
+        <Button
+            android:id="@+id/btnIntroPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:minWidth="100dp"
+            android:text="@string/textPrevious" android:background="@drawable/btn_default" android:textColor="@color/color_button_default"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

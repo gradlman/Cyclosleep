@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+	<item android:id="@+id/showraw" android:icon="@drawable/ic_menu_archive" android:title="@string/textShowRawFiles"></item>
+	<item android:id="@+id/fau_upload" android:icon="@drawable/ic_menu_upload" android:title="@string/fauUpload" android:enabled="false"></item>
+	
+	</menu>

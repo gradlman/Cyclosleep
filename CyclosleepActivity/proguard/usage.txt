@@ -1,0 +1,298 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.google.android.vending.licensing.AESObfuscator:
+    private static final java.lang.String UTF8
+    private static final java.lang.String KEYGEN_ALGORITHM
+    private static final java.lang.String CIPHER_ALGORITHM
+    private static final java.lang.String header
+com.google.android.vending.licensing.APKExpansionPolicy
+com.google.android.vending.licensing.ILicenseResultListener$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_verifyLicense
+com.google.android.vending.licensing.ILicenseResultListener$Stub$Proxy:
+    79:79:public java.lang.String getInterfaceDescriptor()
+com.google.android.vending.licensing.ILicensingService$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_checkLicense
+    19:22:public ILicensingService$Stub()
+    40:40:public android.os.IBinder asBinder()
+com.google.android.vending.licensing.ILicensingService$Stub$Proxy:
+    79:79:public java.lang.String getInterfaceDescriptor()
+com.google.android.vending.licensing.LicenseChecker:
+    private static final java.lang.String TAG
+    private static final java.lang.String KEY_FACTORY_ALGORITHM
+    private static final int TIMEOUT_MS
+    private static final boolean DEBUG_LICENSE_ERROR
+com.google.android.vending.licensing.LicenseChecker$ResultListener:
+    private static final int ERROR_CONTACTING_SERVER
+    private static final int ERROR_INVALID_PACKAGE_NAME
+    private static final int ERROR_NON_MATCHING_UID
+com.google.android.vending.licensing.LicenseCheckerCallback:
+    public static final int ERROR_INVALID_PACKAGE_NAME
+    public static final int ERROR_NON_MATCHING_UID
+    public static final int ERROR_NOT_MARKET_MANAGED
+    public static final int ERROR_CHECK_IN_PROGRESS
+    public static final int ERROR_INVALID_PUBLIC_KEY
+    public static final int ERROR_MISSING_PERMISSION
+com.google.android.vending.licensing.LicenseValidator:
+    private static final java.lang.String TAG
+    private static final int LICENSED
+    private static final int NOT_LICENSED
+    private static final int LICENSED_OLD_KEY
+    private static final int ERROR_NOT_MARKET_MANAGED
+    private static final int ERROR_SERVER_FAILURE
+    private static final int ERROR_OVER_QUOTA
+    private static final int ERROR_CONTACTING_SERVER
+    private static final int ERROR_INVALID_PACKAGE_NAME
+    private static final int ERROR_NON_MATCHING_UID
+    private static final java.lang.String SIGNATURE_ALGORITHM
+com.google.android.vending.licensing.Policy:
+    public static final int LICENSED
+    public static final int NOT_LICENSED
+    public static final int RETRY
+com.google.android.vending.licensing.PreferenceObfuscator:
+    private static final java.lang.String TAG
+com.google.android.vending.licensing.ServerManagedPolicy:
+    private static final java.lang.String TAG
+    private static final java.lang.String PREFS_FILE
+    private static final java.lang.String PREF_LAST_RESPONSE
+    private static final java.lang.String PREF_VALIDITY_TIMESTAMP
+    private static final java.lang.String PREF_RETRY_UNTIL
+    private static final java.lang.String PREF_MAX_RETRIES
+    private static final java.lang.String PREF_RETRY_COUNT
+    private static final java.lang.String DEFAULT_VALIDITY_TIMESTAMP
+    private static final java.lang.String DEFAULT_RETRY_UNTIL
+    private static final java.lang.String DEFAULT_MAX_RETRIES
+    private static final java.lang.String DEFAULT_RETRY_COUNT
+    private static final long MILLIS_PER_MINUTE
+    154:154:public long getRetryCount()
+    180:180:public long getValidityTimestamp()
+    232:232:public long getMaxRetries()
+com.google.android.vending.licensing.StrictPolicy
+com.google.android.vending.licensing.ValidationException:
+    private static final long serialVersionUID
+com.google.android.vending.licensing.util.Base64:
+    public static final boolean ENCODE
+    public static final boolean DECODE
+    private static final byte EQUALS_SIGN
+    private static final byte NEW_LINE
+    private static final byte WHITE_SPACE_ENC
+    private static final byte EQUALS_SIGN_ENC
+    258:258:public static java.lang.String encodeWebSafe(byte[],boolean)
+    431:432:public static byte[] decodeWebSafe(java.lang.String)
+    445:445:public static byte[] decode(byte[])
+    458:458:public static byte[] decodeWebSafe(byte[])
+    489:489:public static byte[] decodeWebSafe(byte[],int,int)
+com.google.android.vending.licensing.util.Base64DecoderException:
+    private static final long serialVersionUID
+com.gradlspace.cys.AudioHandler:
+    274:313:public static void playSignal(android.content.Context,com.gradlspace.cys.AudioHandler$InternalAlarm)
+    735:760:public static void test(android.content.Context)
+com.gradlspace.cys.AudioHandler$Sounds:
+    125:125:public AudioHandler$Sounds()
+com.gradlspace.cys.BuildConfig
+com.gradlspace.cys.CysInternalData
+com.gradlspace.cys.CysInternalData$DatabaseHelper
+com.gradlspace.cys.CysInternalData$SleepRecord
+com.gradlspace.cys.FileManager:
+    public static final long MIN_FREE_SPACE
+    public static final long MIN_FREE_SPACE_SMALL
+    public static final java.lang.String SSD_EXT
+    public static final java.lang.String HYPNO_EXT
+    public static final java.lang.String DREAM_EXT
+    public static final java.lang.String ZIP_EXT
+    32:32:public FileManager()
+com.gradlspace.cys.Guardian:
+    73:107:public static java.lang.String collectSupportInfo(android.content.Context)
+com.gradlspace.cys.LicenseManager:
+    private static final java.lang.String BASE64_PUBLIC_KEY
+    public static final long CRITICAL_LICENSE_DIFF
+    private static final java.lang.String PREFS_FILE
+    23:23:public LicenseManager()
+    210:212:public static synchronized void resetCache()
+com.gradlspace.cys.LockAuthority:
+    private static final int DEFAULT_SECURE_FLAGS
+    private static final int DEFAULT_NORMAL_FLAGS
+    private static final int NOSENSOR_SECURE_FLAGS
+    private static final int NOSENSOR_NORMAL_FLAGS
+    22:22:public LockAuthority()
+    92:96:public static synchronized com.gradlspace.cys.LockAuthority$LockMode getMode()
+com.gradlspace.cys.R
+com.gradlspace.cys.R$array
+com.gradlspace.cys.R$attr
+com.gradlspace.cys.R$color
+com.gradlspace.cys.R$drawable
+com.gradlspace.cys.R$id
+com.gradlspace.cys.R$layout
+com.gradlspace.cys.R$menu
+com.gradlspace.cys.R$raw
+com.gradlspace.cys.R$string
+com.gradlspace.cys.R$styleable
+com.gradlspace.cys.R$xml
+com.gradlspace.cys.SPTracker:
+    public static final long THRESHOLD_BLOCK_MILLIS
+    public static final float REDUCTION_MULT
+    public static final float REDUCTION_MULT_STRICT
+    public static final int NUM_VALUES
+    public static final long PPM_DURATION
+    37:37:public SPTracker()
+com.gradlspace.cys.Space:
+    public static final java.lang.String TAG
+    public static final boolean SECOND
+    public static final java.lang.String ACTION_ALARM
+    public static final java.lang.String ACTION_QUICKTIMER
+    public static final java.lang.String ACTION_EVENT
+    public static final java.lang.String ACTION_MONITOR
+    public static final java.lang.String ACTION_MONITOR_FORCE
+    public static final java.lang.String ACTION_MONITOR_PRESTART
+    public static final java.lang.String ACTION_MONITOR_CALIBRATE
+    public static final java.lang.String EXTRA_STRING
+    public static final java.lang.String EXTRA_INT
+    public static final java.lang.String SEND_TYPE_EMAIL
+    public static final java.lang.String SEND_TYPE_GENERIC
+    public static final java.lang.String PREF_FIRST_START
+    public static final java.lang.String PREF_EULA
+    public static final java.lang.String PREF_TRIGGER_ENABLED
+    public static final java.lang.String PREF_TRIGGER_TIME
+    public static final java.lang.String PREF_TRIGGER_SOUND
+    public static final java.lang.String PREF_SLEEPING
+    public static final java.lang.String PREF_AR_WAS_SET
+    public static final java.lang.String PREF_APM_WAS_SET
+    private static final int NOTIFY_ID
+    212:212:public static android.view.WindowManager getWindowManager(android.content.Context)
+    259:263:public static void killForLicense(android.content.Context,java.lang.String)
+    855:858:public static void test(android.content.Context)
+    864:865:protected Space()
+com.gradlspace.cys.TimeTrigger:
+    protected static final long MILLI_MARGIN
+    public static final byte BEFORE
+    public static final byte AFTER
+    public static final byte EQUAL
+    241:241:public java.lang.String getConfigString(android.content.Context)
+    253:253:public long getEta(long)
+    283:283:public long getPreFireTime(android.content.Context)
+com.gradlspace.cys.Trigger:
+    74:74:public java.lang.String getConfigString(android.content.Context)
+    public abstract long onFire(android.content.Context,boolean)
+    111:112:public void onDestroy()
+com.gradlspace.cys.TriggerHandler:
+    public static final byte NUM_ALARMS
+    public static final int MAX_TRIGGERS
+com.gradlspace.cys.activities.AlarmActivity:
+    public static final int RATE_SLEEP
+com.gradlspace.cys.activities.AlarmEditActivity:
+    public static final java.lang.String EXTRA_ALARM_ID
+com.gradlspace.cys.activities.CyclosleepActivity:
+    private static final int DIALOG_LICENSE
+    private static final int DIALOG_LICENSE_ERROR
+    private static final int DIALOG_ALARM
+    private static final int DIALOG_ASK_MONITOR
+    private static final int DIALOG_EXIT
+    private static final int DIALOG_CRIPPLE
+com.gradlspace.cys.activities.DeviceTestActivity:
+    public static final int NUM_VALUES
+    private static final int MAGNITUDE
+    private static final float alpha
+    private static final float beta
+com.gradlspace.cys.activities.MonitorActivity:
+    public static final int DIALOG_EXIT
+    private static final long INTERVAL_SHORT
+    private static final long INTERVAL_MEDIUM
+    private static final long INTERVAL_LONG
+com.gradlspace.cys.activities.OptionsActivity:
+    public static final int TTS_CHECK
+    public static final int ALARM_EDIT
+com.gradlspace.cys.activities.ViewerActivity:
+    static final int PROGRESS_DIALOG
+com.gradlspace.widgets.AlarmPreference:
+    43:45:public AlarmPreference(android.content.Context,int)
+    84:86:public AlarmPreference(android.content.Context)
+com.gradlspace.widgets.HypnogramView:
+    151:156:public HypnogramView(android.content.Context)
+    207:208:public void setDrawAxes(boolean)
+com.gradlspace.widgets.SafeViewFlipper:
+    24:25:public SafeViewFlipper(android.content.Context)
+com.gradlspace.widgets.TimeEdit:
+    public static final int TIME_PROGRESS_INTERVAL
+    public static final int MAX_TIME_PROGRESS
+    public static final int TIME_PROGRESS_DIVISOR
+    265:267:public TimeEdit(android.content.Context)
+de.lme.plotview.BooleanValueList:
+    78:92:public void copy(java.util.ArrayList)
+    99:99:public void findMax()
+    106:106:public void findMin()
+    113:113:public void findMinMax()
+    119:121:public boolean getHeadValue()
+    343:343:public int add(float)
+    354:354:public int add(long)
+de.lme.plotview.CircularValueList:
+    89:90:private CircularValueList()
+    142:144:public CircularValueList(int)
+    public abstract int add(float)
+    public abstract int add(long)
+    public abstract void findMax()
+    public abstract void findMin()
+    public abstract void findMinMax()
+de.lme.plotview.CircularValueList$Statistics
+de.lme.plotview.FloatValueList:
+    75:77:public FloatValueList(int)
+    178:201:public void copy(de.lme.plotview.FloatValueList)
+    271:273:public float getHeadValue()
+    285:285:public float getPastValue(int)
+    511:516:public java.lang.String toString(java.lang.String)
+    528:552:public void calculateStats(int,int,de.lme.plotview.CircularValueList$Statistics)
+de.lme.plotview.LmeFilter:
+    31:55:public LmeFilter(double[],double[])
+    57:78:public LmeFilter(double,double,double,double,double,double,double,double)
+    121:121:public double current()
+de.lme.plotview.LmeFilter$ButterworthFilter
+de.lme.plotview.LmeFilter$FirstDerivativeFilter
+de.lme.plotview.LmeFilter$HannFilter
+de.lme.plotview.LmeFilter$MinDetectionFilter
+de.lme.plotview.LmeFilter$PeakDetectionFilter
+de.lme.plotview.LmeFilter$SecondDerivativeFilter
+de.lme.plotview.LmeFilter$StatFilter
+de.lme.plotview.LmeFilter$TpcdFilter
+de.lme.plotview.LongValueList:
+    187:189:public long getHeadValue()
+    417:417:public int add(float)
+de.lme.plotview.ObjectValueList
+de.lme.plotview.Plot:
+    private static final int DEFAULT_NUM_MARKERS
+    613:620:public static android.graphics.Paint generatePlotPaint(android.graphics.Paint$Style,int,int,int,int)
+    636:637:public void setMarker(de.lme.plotview.Plot$PlotMarker)
+    699:700:public void setViewport(int)
+    864:864:public int getValueHead()
+    868:869:public void clear()
+    public abstract boolean saveToFile(android.content.Context,java.lang.String,java.lang.String)
+    public abstract int loadFromFile(android.content.Context,java.io.InputStream)
+de.lme.plotview.Plot$PlotMarker:
+    212:215:public void onAttach(de.lme.plotview.Plot)
+de.lme.plotview.Plot$PlotMarkerDefault
+de.lme.plotview.Plot$PlotMarkerDefault$DefaultMark
+de.lme.plotview.Plot1D:
+    202:220:public void addValue(long,long,de.lme.plotview.Plot$PlotMarker)
+    225:227:public void clear()
+    849:892:public int loadFromFile(android.content.Context,java.io.InputStream)
+de.lme.plotview.Plot2D:
+    140:142:public void clear()
+    475:518:public int loadFromFile(android.content.Context,java.io.InputStream)
+de.lme.plotview.Plot3D
+de.lme.plotview.PlotView:
+    protected static final java.lang.String TAG
+    protected static final int AXIS_PADDING
+    protected static final int AXIS_PIN_LENGTH
+    protected static final int AXIS_PIN_COUNT
+    protected static final float DEFAULT_TEXT_SIZE
+    637:639:public PlotView(android.content.Context)
+    723:735:public int attachPlot(de.lme.plotview.Plot,de.lme.plotview.Plot$PlotChangedListener)
+    752:752:public long getMaxRedrawRate()
+    771:772:public de.lme.plotview.Plot getPlot(int)
+    1100:1105:public void removePlot(int)
+    1112:1114:public void setMaxRedrawRate(long)
+    1122:1123:protected static void log(java.lang.String)
+de.lme.plotview.PlotView$PlotViewGroup:
+    175:175:public PlotView$PlotViewGroup()
+    185:191:public void addView(de.lme.plotview.PlotView,boolean)
+de.lme.plotview.SamplingPlot:
+    46:47:public void addValue(long)

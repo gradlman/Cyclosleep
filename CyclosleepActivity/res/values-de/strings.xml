@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	 <!-- Global App Strings -->
+    <string name="hello">Willkommen zu Cyclosleep</string>
+    <string name="app_name">Cyclosleep</string>
+    <string name="textCysUrl">http://gradlspace.com/cys/</string>
+    <string name="textCopyright">Copyright 2011-2012 gradlspace.com.\nAll rights reserved.</string>
+    <string name="textLicences">Nichts.</string>
+    <string name="textNotifyActive">Cyclosleep aktiv</string>
+
+    <!-- License checking status messages -->
+    <string name="check_license">Lizenz checken</string>
+    <string name="checking_license">Überprüfe Lizenz...</string>
+    <string name="license_ok">Lizenz OK.</string>
+    <string name="application_error">Programmfehler: %1$s</string>
+
+    <!-- Unlicensed dialog messages -->
+    <string name="unlicensed_dialog_title">Programmlizenz abgelaufen</string>
+    <string name="unlicensed_dialog_body">Die gecachte Programm-Lizenz ist abgelaufen. Die Android Lizenzüberprüfung konnte keine gültige Lizenzantwort erhalten.\nEventuell gibt es ein Problem mit Ihrer Verbindung zum Android Market.\nStellen Sie sicher, dass eine Verbindung zum Internet besteht und drücken Sie "Wiederholen".\nFür weitere Informationen zur Lizenzierung, besuchen Sie http://gradlspace.com/cys/faq</string>
+
+    <!-- General purpose text -->
+    <string name="textNull"> </string>
+    <string name="textBuy">App kaufen</string>
+    <string name="textExit">Beenden</string>
+    <string name="textYes">Ja</string>
+    <string name="textNo">Nein</string>
+    <string name="textRetry">Wiederholen</string>
+    <string name="textCancel">Abbrechen</string>
+    <string name="textNotSet">Nicht gesetzt</string>
+    <string name="textMonitor">Monitor</string>
+    <string name="textOptions">Optionen</string>
+    <string name="textCalibrate">Kalibrieren</string>
+    <string name="textAnalyzer">Analysierer</string>
+    <string name="textViewer">Viewer</string>
+    <string name="textAlarmDismiss">Bestätigen</string>
+    <string name="textSave">Speichern</string>
+    <string name="textAbout">Über</string>
+    <string name="textEnterUrl">Eine URL eingeben</string>
+    <string name="textNext">Weiter</string>
+    <string name="textSkip">Überspringen</string>
+    <string name="textBack">Zurück</string>
+    <string name="textSelect">Auswählen</string>
+    <string name="textPrevious">Vorherig</string>
+    <string name="textContinue">Fortfahren</string>
+    <string name="textClickToView">Zum Anzeigen klicken</string>
+    <string name="textSet">Setzen</string>
+    <string name="textStart">Start</string>
+    <string name="textGo">Los!</string>
+    <string name="textStop">Stop</string>
+    <string name="textAccept">Akzeptieren</string>
+    <string name="textReject">Ablehnen</string>
+    <string name="textUnknown">Unbekannt</string>
+    <string name="textPurge">Verwerfen</string>
+    <string name="textSort">Sortieren</string>
+    <string name="textDelete">Löschen</string>
+    <string name="textView">Anzeigen</string>
+    <string name="textNA">n/a</string>
+    <string name="textCalibration">Kalibrierung</string>
+    <string name="textCalibrationMode">Kalibrierungsmodus</string>
+    <string name="textOk">Ok</string>
+    <string name="textReport">Bericht...</string>
+    <string name="textDetails">Details</string>
+    <string name="textHelp">Hilfe</string>
+    <string name="textDefault">Standard</string>
+    <string name="textClose">Schließen</string>
+    <string name="textEmail">Email</string>
+    <string name="textTest">Test</string>
+    <string name="textTestPrev">Test/Vorschau</string>
+    <string name="textDecSens">Sens. verringern</string>
+    <string name="textIncSens">Sens. erhöhen</string>
+    <string name="textZip">Komprimieren</string>
+    <string name="textDate">Datum</string>
+    <string name="textBattery">Akku</string>
+    <string name="textShowRawFiles">Source-Dateien</string>
+    <string name="textSleepLog">Schlaf-Logbuch</string>
+    <string name="textStats">Statistiken</string>
+    <string name="textFinish">Fertig</string>
+    <string name="textPreview">Vorschau</string>
+    <string name="textSendXDF">Senden als OpenXDF</string>
+    <string name="textSendEDF">Senden als EDF</string>
+
+    <!-- Alarm related text -->
+    <string name="textEditAlarm">Alarm bearbeiten</string>
+    <string name="textMainDisabled">Alle Alarme deaktivieren</string>
+    <string name="textSleepNow">Schlafen gehen!</string>
+    <string name="textQuickAlarm">Quick Alarm</string>
+    <string name="textAlarmMainDesc">Alarm (#1) setzen:</string>
+    <string name="textQuickTimerAlert">Quick Timer Alarm!</string>
+    <string name="textQuickTimerInfo">Die Zeit ist um.</string>
+    <string name="textQuickTimer">Timer</string>
+    <string name="textUsesAlarm1">Verwendet die Einstellungen von \"Alarm 1\"</string>
+    <string name="textSleepStart">SleepMode aktiviert. Lege das Handheld jetzt aufs Bett. Gute Nacht!</string>
+    <string name="textActiveTriggers">Aktive Alarme:</string>
+    <string name="textSleeping">Am Schlafen</string>
+    <string name="textNextAlarm">Nächster:</string>
+    <string name="textLastHypno">Letztes Hypnogramm</string>
+    <string name="textDialogAskMonitorTitle">Jetzt Schlafen</string>
+    <string name="textDialogAskMonitor">Den Monitor jetzt starten?</string>
+    <string name="textAboutNight">Wegen letzter Nacht...</string>
+    <string name="textMainStatus">%1$d aktive Alarme.\nNächster: %2$s</string>
+    <string name="textTriggerWnd">Nächster Alarm zwischen </string>
+    <string name="textMainStats">Mittlere Schlafdauer:</string>
+    <string name="textPrefireMon">Zeitfenster in dem der Alarm vor der tatsächlichen Weckzeit losgehen kann [in Minuten].</string>
+
+    <!-- Dream related text -->
+    <string name="textDream">Traum</string>
+    <string name="textDreamTheme">Was wäre eine Kurzüberschrift die den Traum beschreibt?</string>
+    <string name="textEmotion">Dominante Emotion</string>
+    <string name="textDreamText">Detaillierte Beschreibung des Traums</string>
+    <string name="textDreamRate">Bewerte den Traum intuitiv</string>
+
+    <!-- Sleep Cycle related -->
+    <string name="textSleep">Schlaf</string>
+    <string name="textRateSleep">Bewerte den Schlaf</string>
+    <string name="textStageDeep">Tiefschlaf</string>
+    <string name="textStageTwilight">Übergangsschlaf</string>
+    <string name="textStageDead">Tot</string>
+    <string name="textStageRem">REM</string>
+    <string name="textStageDawn">Halbwach</string>
+    <string name="textStageAwake">Wach</string>
+    <string name="textTimeSlept">Ungestörter Schlaf</string>
+    <string name="textDuration">Dauer</string>
+    <string name="textSleepDurations">Schlafdauer</string>
+    
+    <!-- Calibration Utility -->
+    <string name="calibrateIntro">Willkommen beim Kalibrierungstool! Diese Aktivität wird Ihnen helfen einen geeigneten Platz für ihr Handy auf dem Bett zu finden und sicherstellen, dass der Sensor ihre Bewegungen auch wahrnimmt. Sie können das Tool jederzeit durch Drücken des <i>Zurück</i>-Buttons beenden.</string>
+    <string name="calibrateExplain">Platzieren Sie ihr Handheld irgendwo auf ihr Bett und legen Sie sich ebenfalls hinein. Sie werden nun jedesmal einen Signalton hören, wenn der Sensor eine Bewegung von ihnen registriert hat die ausreichend wäre um sie zu wecken. Versuchen sie sich ein wenig herumzudrehen und achten sie auf den Signalton. Experimentieren sie mit der Positionierung des Handhelds, bis sie eine Position gefunden haben, bei der der Signalton nicht schon bei der kleinsten Bewegung ertönt, sondern nur wenn sie sich wirklich deutlich bewegt haben.</string>
+    <string name="calibrateFinish">Bewegung detektiert. Empfohlener Schwellwertmultiplikator: %1$.2f\nDrücken Sie Speichern um den empfohlenen Wert zu setzen und die Kalibrierung zu beenden.</string>
+    <string name="calibrateWaiting">Warte... </string>
+    <string name="calibrateFailed">Es konnte keine Bewegung detektiert werden. Wahrscheinlich ist die gewählte Stelle für das Handheld nicht geeignet. Stellen Sie sicher, dass Sie ihr Handheld so platzieren, dass ihre Bewegungen über die Matratze oder Kissen an die Bewegungssensoren im Handy weitergeleitet werden können.</string>
+    
+
+    <!-- Hints / Tips / Dialogs -->
+    <string name="textInfoSeePrefs">Gehe ins Menü > Optionen um Anpassungen vorzunehmen.</string>
+    <string name="textExplorerHint">Halte einen Eintrag gedrückt um das Kontextmenü anzuzeigen.</string>
+    <string name="textPressStart">Drücke Starten, um mit der Kalibrierung zu beginnen.</string>
+    <string name="textResetPrefs">Einstellungen zurücksetzen?</string>
+    <string name="hintMainAlarm">(per Eingabe oder Schieber)</string>
+    <string name="textResetPrefsBody">Wirklich alle Einstellungen auf ihre Standardwerte zurücksetzen?</string>
+    <string name="textReallyExit">Wirklich beenden? Dabei werden alle aktiven Alarme und Timer deaktiviert!\nDrücke \"Schließen\" um lediglich die Aktivität zu beenden aber die Alarme aktiviert zu lassen.</string>
+    <string name="textNeedAlarms">Um den SleepMode zu aktivieren muss mindestens ein Alarm aktiviert sein.</string>
+    <string name="textArchived">%1$d Dateien archiviert.</string>
+    <string name="textPurged">%1$d Dateien gelöscht.</string>
+    <string name="textPurgeFiles">Alle Dateien löschen, oder nur die veralteten?</string>
+    <string name="textPurgeAll">ALLE löschen</string>
+    <string name="textPurgeOut">Nur veraltete</string>
+    <string name="textHelpViewer">Benutze Berührungsgesten um die Views zu navigieren. Drücke den \"Zurück\" button an deinem Handheld um den Viewer zu verlassen.</string>
+    <string name="textHelpMain">Wähle eine Weckzeit durch Ziehen der Leiste in der Mitte des Bildschirms. Dann drücke \"Setzen\" um den Alarm zu aktivieren. Klicke danach auf \"Schlafen gehen!\", verstaue das Handheld unter dem Kopfkissen und fange an zu schlafen.</string>
+    <string name="hintPressAlarm">Drücke auf den Alarm-Text um ihn anzupassen.</string>
+    <string name="textStopMonQuestion">Wirklich den Monitor beenden? Der Alarm wird dann nicht durch die Schlafphase aktiviert!</string>
+    <string name="helpMonitor">Der Monitor überwacht ihre Bewegungen während der Nacht. Wenn Sie ihn beenden, kann der Alarm nicht durch ihre Schlafphasen ausgelöst werden.</string>
+        
+
+    <!-- Errors / Warnings -->
+    <string name="textError">Fehler</string>
+    <string name="textErrorSendReport">Bitte drücke den Bericht-Button um einen Autogenerierten Problembericht an uns zu senden. Wir werden uns so schnell wie möglich mit dir in Verbindung setzten.\nDu kannst den Support auch direkt kontaktieren unter support@gradlspace.com.</string>
+    <string name="textErrorSupport">Bitte den Kundendienst kontaktieren: support@gradlspace.com</string>
+    <string name="textErrorFreeSpace">Fehler! Auf dem Dateisystem ist nicht genug freier Speicher!</string>
+    <string name="textErrorMedia">Fehler beim Abspielen der Medien. Konnte die Datei/Stream nicht finden oder es handelt sich um ein ungültiges Format.</string>
+    <string name="textErrorIO">Fehler beim Zugriff auf das Dateisystem!</string>
+    <string name="textUnknownFormat">Unbekanntes Format.</string>
+    <string name="textErrorText">Das Programm ist auf einen Fehler gestoßen.\n\nDrücke den \"Bericht\" Button um einen Fehlerreport an uns zu senden der den, unter \"Details\" aufgeführten Text enthält.\nDrücke \"Ok\" um das Fenster zu schließen. Abhängig von dem Schweregrad des Fehlers muss eventuell die Anwendung geschlossen werden. Du kannst sie dann einfach neu starten.</string>
+    <string name="errorBatteryLow">Ladezustand des Akkus zu niedrig. Monitor wurde beendet. Bitte stellen Sie vor dem Schlafengehen immer sicher dass der Akku ausreichend geladen ist.</string>
+    <string name="errorBatteryHigh">Akkutemperatur kritisch! Der Monitor wurde beendet. Bitte setzen Sie sich mit dem Support in Kontakt.</string>
+    <string name="errorWakelock">Konnte nicht auf die Standby-Verwaltung zugreifen. Das könnte an einem bekannten Problem in manchen Handymodellen liegen. Versuche die neueste Firmware zu installieren und versuche es erneut. Kontaktiere im Zweifelsfall den Kundendienst unter support@gradlspace.com</string>
+    <string name="errorNoEmailClient">Keine geeignete Email-Anwendung gefunden.</string>
+    <string name="errorNotSupported">Nicht unterstützt!</string>
+    <string name="errorCrippleDevice">Die Firmware auf ihrem Gerät enthält einen kritischen Bug der eine normale Funktionsweise von Cyclosleep verhindert.\nEs gibt verschiedene Möglichkeiten damit umzugehen:\n\n<b>1.</b> Installieren Sie die neueste Firmware für ihr Gerät. Der Bug wurde ab Android 2.3.4 in den meisten Geräten behoben.\n\n<b>2.</b> Versuchen Sie eine der verschiedenen Bug-Workaround Optionen zu aktivieren. Lesen Sie die FAQ für weitere Informationen.\n\n<b>3.</b> Aktivieren Sie den Einfachen Modus der keinerlei Schlafphasenerkennung durchführt.\n\n<b>4.</b> Sollten Ihnen die Begriffe Bug und Firmware nichts sagen und Sie auch kein Interesse haben sich mit diesen Themen auseinanderzusetzen, empfehlen wir, dass Sie Cyclosleep wieder deinstallieren, um sich schlechte Erfahrungen zu ersparen :-(</string>
+    <string name="errorCrippleUseWorkaround">Umgehen</string>
+    <string name="errorCrippleUseSimpleMode">SimpleMode</string>
+    <string name="errorNoFile">Keine Datei gefunden.</string>
+    
+
+    <!-- EULA related -->
+    <string name="textEula">Endnutzer Lizenzvereinbarung</string>
+    <string name="textEulaText">Durch Drücken auf \"Akzeptieren\" erklären Sie sich damit einverstanden, den Text der Endbenutzer Lizenzvereinbarung durchgelesen und verstanden zu haben und deren Inhalt auch akzeptieren.\nhttp://gradlspace.com/cys/eula\n\n
+        Im Besonderen erklären sie sich damit einverstanden, dass die Autoren dieser Software unter keinerlei Umständen für Schaden verantwortlich gemacht werden können der an ihrem Gerät entsteht während Sie dieses Programm benutzen.
+ Obwohl sehr unwahrscheinlich, kann nicht ausgeschlossen werden, dass Sie unabsichtlicherweise oder indirekt ihr Gerät im Schlaf beschädigen. Empfehlungen wie dieses Risiko minimiert werden kann finden Sie am Ende des Tutorials sowie unter \nhttp://gradlspace.com/cys/safety\n\n
+ Da dieses Programm Teil eines laufenden Forschungsprojektes an der <i>Universität Erlangen-Nürnberg</i> und des <i>Universitätsklinikums Erlangen</i> ist, könnte es sein, dass sie zu gegebenem Anlass gefragt werden, ob Sie sich freiwillig an einer universitären/medizinischen Studie durch Übermittlung anonymisierter Schlafdaten beteiligen möchten. Nährere Details würden dann in dem jeweiligen Fall noch veröffentlicht werden.
+ Sie können versichert sein, dass keinerlei Daten die direkt von unseren Programmmodulen verarbeitet werden, jemals ohne ihre direkte, jeweils erneut abgefragte Zustimmung, übermittelt, empfangen oder angesammelt werden.
+ Sollten Sie bereits jetzt sicher sein, dass Sie nie über eine Beteiligung gefragt werden möchten, können Sie dies durch eine Einstellung im Optionenmenü festlegen.</string>
+
+    <!-- Intro texts -->
+    <string name="textIntroName">Einführung</string>
+    <string name="textTutorial">Tutorial</string>
+
+        <string name="textIntroWelcome">Willkommen zu Cyclosleep.\n\nDa dies das erste Mal zu sein scheint, dass Sie dieses Programm starten, möchten wir Ihnen eine kurze Einführung in die Funktionsweise von Cyclosleep geben.\n\n
+ Sollten Sie damit bereits vertraut sein, drücken Sie einfach den \"Zurück\" Button ihres Gerätes.</string>
+ 
+            <string name="textIntroShort">Quickstart\n\nGeben Sie im Hauptbildschirm eine Weckzeit ein, entweder mit Hilfe des Sliders oder durch direkte Eingabe in den Textfeldern.\n\nDrücken Sie dann \"Setzen\" und \"Schlafen gehen!\". Jetzt können Sie ihr Handy irgendwo in ihr Bett legen. Idealerweise unter oder in die Nähe ihres Kopfkissens (wie im Bild unten dargestellt).\n\nStellen Sie sicher, dass das Handy während der Nacht nicht aus dem Bett fallen kann. Z.b. indem Sie es unter das Bettlaken legen. Schalten Sie nur das Display aus, nicht das Handy selbst!\n\nCyclosleep wird Sie nun spätenstens zu der gestellten Zeit wecken. Abhängig von ihren Einstellungen und der Schlafphase, kann der Wecker auch schon in einem bestimmten Zeitfenster 10-50 Minuten VOR der gestellten Weckzeit aktiviert werden. Bitte stellen Sie dieses Zeitfenster abhängig von den Erfahrungen, die Sie mit ihrem Aufwachrhythmus machen, ein.\nDie Schwellwerte werden von Cyclosleep automatisch innerhalb der ersten drei bis sieben Tage angepasst. Bitte haben Sie Geduld wenn Sie in den ersten zwei Tagen noch etwas verfrüht geweckt werden.</string>
+
+    <string name="textIntroPart02">Im Optionsmenü können Sie viele verschiede Parameter anpassen.\nWir empfehlen, dass Sie die Website besuchen und das Online-Handbuch durchlesen, um eine genaue Beschreibung der Funktionen zu erhalten.\n\nhttp://gradlspace.com/cys\n\n
+ Dort finden Sie auch zusätzliche Informationen über die verbundenen Forschungs-Projekte an der Universität Erlangen-Nürnberg und wie Sie diese unterstützen können.</string>
+ 
+        <string name="textIntroPart99">Cyclosleep wird jetzt den Beschleunigungssensor in ihrem Gerät testen. Bei verschiedenen älteren Handy-Modellen können die Accelerometer-Werte nicht ausgelesen werden solange das Display deaktiviert ist. Dies würde die Funktionalität von Cyclosleep extrem beeinträchtigen.</string>
+
+    <!-- Preferences text -->
+    <string name="prefAlarmAdv">Erweiterte Alarmeinstellungen</string>
+    <string name="prefAlarms">Alarme</string>
+    <string name="prefAlarmAdvDesc">Tiefgehende Einstellungsmöglichkeiten für Alarme, Ereignisse und Reaktionen.</string>
+    <string name="prefAaTimeout">Alarm Timeout</string>
+    <string name="prefAaTimeoutDesc">Die Zeit nach der die Alarmsounds automatisch abgeschaltet werden.</string>
+    <string name="prefAaVibe">Vibrationen deaktivieren</string>
+    <string name="prefAaVibeDesc">Keinen Vibrationsalarm verwenden.</string>
+    <string name="prefAaSound">Sound deaktivieren</string>
+    <string name="prefAaSoundDesc">Keine Soundeffekte/Musik verwenden.</string>
+    <string name="prefAaNoSilent">Stumm-Modus ignorieren</string>
+    <string name="prefAaNoSilentDesc">Spielt sämtliche Alarmsounds ab, selbst wenn das Handy sich im Stumm-Modus befindet.</string>
+    <string name="prefAaRiot">Aufstand</string>
+    <string name="prefAaRiotDesc">Spielt einen nervigen Sound im letzten Viertel des Alarm-Timeouts ab, sollte dieser nicht bestätigt werden.</string>
+    <string name="prefAaCommit">Bestätigung prüfen</string>
+    <string name="prefAaCommitDlg">Bestätigungsprüfung</string>
+    <string name="prefAaCommitDesc">Zusätzliche Aktion die ausgeführt werden muss, bevor der Alarmsound deaktiviert wird.</string>
+    <string name="prefDream">Träume</string>
+    <string name="prefDreamDesc">Einstellungen um sich an seine Träume zu erinnern.</string>
+    <string name="prefDreamAsk">Nach Alarm nachfragen</string>
+    <string name="prefDreamAskDesc">Nach einem Traum fragen, sobald der Alarm bestätigt wurde.</string>
+    <string name="prefDreamAsync">Alarmzeiten versetzen</string>
+    <string name="prefDreamAsyncDesc">Versucht während REM-Phasen zu wecken. VORSICHT: dies kann zu Unausgeschlafenheit führen!</string>
+    <string name="prefSns">Soziale Netzwerke</string>
+    <string name="prefSnsDesc">Share!</string>
+    <string name="prefSnsEnable">Soziale Netzwerke verwenden</string>
+    <string name="prefSnsEnableDesc">Integration in Soziale Netzwerke konfigurieren.</string>
+    <string name="prefSnsEmail">Email</string>
+    <string name="prefSnsEmailDesc">Zusätzliche Optionen zum emailen anzeigen.</string>
+    <string name="prefAlarmSetup">Alarmeinstellungen</string>
+    <string name="prefMonitoring">Monitoring</string>
+    <string name="prefSetStream">Stream-URL eingeben</string>
+    <string name="prefSleepRating">Schlafbewertung</string>
+    <string name="prefSleepRatingDesc">Fragt eine Bewertung des Schlafes ab, nachdem der Alarm bestätigt wurde.</string>
+    <string name="prefHints">Tipps anzeigen</string>
+    <string name="prefHintsDesc">Zeigt Tipps und Kontexthilfen an.</string>
+    <string name="prefRandomSound">Zufallssound verwenden</string>
+    <string name="prefRandomSoundDesc">Jedes Mal wenn der Alarm ausgelöst wird, wird ein zufälliges Lied auf dem Gerät abgespielt.</string>
+    <string name="prefIRadio">Internetradio verwenden</string>
+    <string name="prefIRadioDesc">Verwendet eine Internetradiostation oder Stream als Alarmsound.</string>
+    <string name="prefSunrise">Sonnenaufgang als Weckzeit</string>
+    <string name="prefSunriseDesc">Verwendet die berechnete Zeit des Sonnenaufgangs als Weckzeit.</string>
+    <string name="prefNoDup">Einmalige Alarme</string>
+    <string name="prefNoDupDesc">Verhindert, dass Alarme zwei mal ausgelöst werden. (1. Schlafphasenbasiert &amp; 2. Zur eingestellten Weckzeit)</string>
+    <string name="prefCustom">Parameter anpassen</string>
+    <string name="prefCustomDesc">Ermöglicht die Anpassung der Erkennungsparameter. (Für Experten!)</string>
+    <string name="prefCustomStage">Schwellwert anpassen.</string>
+    <string name="prefSPThreshold">Bewegungs-Schwellwert</string>
+    <string name="prefSPThresholdDesc">Schwellwert der Bewegungserkennung [12-500 int]</string>
+    <string name="prefNoAutoAdapt">Deaktiviere Auto Adaption</string>
+    <string name="prefNoAutoAdaptDesc">Deaktivert die automatische Anpassung der Schwellwerte. Ermöglicht die manuelle Festlegung.</string>
+    <string name="prefStreamTimeout">Stream Timeout</string>
+    <string name="prefStreamTimeoutDesc">Wiederholungs-Timeout um einen Audio-Stream-Server zu erreichen [Sekunden].</string>
+
+    <!-- Speech Output -->
+    <string name="prefSpeech">Sprachsynthese</string>
+    <string name="prefSpeechDesc">Verwendet Android\'s Text-To-Speech Modul um Sprache auszugeben.</string>
+    <string name="prefSpeechEnable">Verwende TTS</string>
+    <string name="prefSpeechEnableDesc">Initialisiert das TTS Modul und überprüft ob die Sprachdaten vorhanden sind.</string>
+    <string name="prefSpeechAtime">Zeit ansagen</string>
+    <string name="prefSpeechAtimeDesc">Aktiviert regelmäßige Zeitansagen während eines Alarms.</string>
+    <string name="prefSpeechMessage">Nachricht ansagen</string>
+    <string name="prefSpeechMessageDesc">Aktiviert die Ansage der eingestellten Nachricht während des Alarms.</string>
+    <string name="prefSpeechInterval">Ansageintervall</string>
+    <string name="prefSpeechIntervalDesc">In welchen Abständen die Ansagen während des Alarms gemacht werden [in Minuten].</string>
+    <string name="prefSpeechTextFormat">Es ist %H:%M.</string>
+
+    <!-- SleepMode prefs -->
+    <string name="prefApMode">Flugzeugmodus</string>
+    <string name="prefApModeDesc">Aktiviert den Flugzeugmodus während des SleepMode um alle Sender im Gerät zu deaktivieren.</string>
+    <string name="prefOnSleepNow">SleepMode Aktion</string>
+    <string name="prefOnSleepNowDesc">Aktion die ausgeführt wird wenn der SleepMode aktiviert wird.</string>
+    <string name="prefAoMode">Automatische Orientierung deaktivieren</string>
+    <string name="prefAoModeDesc">Deaktiviert die automatische Anpassung der Displayorientierung im SleepMode. (Empfohlen)</string>
+    <string name="prefSleepMode">Während des SleepMode</string>
+    <string name="prefUseCripple">Sensor-Bug-Workaround</string>
+    <string name="prefUseCrippleDesc">Wähle einen Work-Around für den berüchtigten Sensor-Tracking Bug. (Siehe FAQ!)</string>
+
+    <!-- Data Storage prefs -->
+    <string name="prefData">Datenspeicher</string>
+    <string name="prefDataDesc">Gesammelte Daten speichern/organisieren/archivieren.</string>
+    <string name="prefEnableData">Datenspeicher aktivieren</string>
+    <string name="prefEnableDataDesc">Schreibt alle gesammelten Daten auf den Gerätespeicher. Ist dies deaktiviert, können nur Live-Berichte eingesehen werden.</string>
+    <string name="prefAutoCleanup">Automatische Bereinigung</string>
+    <string name="prefAutoCleanupDesc">Löscht automatisch sehr alte oder unsinnig kleine Datendateien.</string>
+    <string name="prefNoSensorData">Rohdaten ausschließen</string>
+    <string name="prefNoSensorDataDesc">Speichert alles, außer den Sensor-Rohdaten. (Empfohlen)</string>
+    <string name="prefDataPath">Datenspeicher-Verzeichnis</string>
+    <string name="prefDataPathDesc">Ein spezielles Verzeichnis für den Datenspeicher angeben, falls nicht der Standard verwendet werden soll (sdcard).</string>
+    <string name="prefExpire">Verfallsdatum</string>
+    <string name="prefExpireDesc">Zeit [in Tagen] nach der die Daten automatisch gelöscht werden.</string>
+    <string name="prefNoScience">Wissenschaft deaktivieren</string>
+    <string name="prefNoScienceDesc">Aktiviere dies um niemals über einer Teilnahme an Forschungsprojekten gefragt zu werden.</string>
+    <string name="prefDataZip">Rohdaten komprimieren</string>
+    <string name="prefDataZipDesc">Komprimiert sämtliche Daten bevor sie versendet werden, oder sobald sie älter als 7 Tage sind.</string>
+
+    <!-- Global prefs -->
+    <string name="prefGlobal">Globale Einstellungen</string>
+    <string name="prefTimer">QuickTimer anzeigen</string>
+    <string name="prefTimerDesc">Zeigt einen kleinen Timer im Hauptfenster an als Gimmick. (Neustart nötig)</string>
+    <string name="prefIcon">Benachrichtigungsleiste verwenden</string>
+    <string name="prefIconDesc">Hält ein dauerhaftes Icon in der Benachrichtigungsleiste von Android, solange mindestens ein Alarm aktiviert ist.</string>
+    <string name="prefSimple">Einfacher Modus</string>
+    <string name="prefSimpleDesc">Deaktiviert die meisten Erkennungsmodule und macht dies zu einem normalen, nur zeit-basiertem Wecker.</string>
+    <string name="prefCalibrate">Kalibrierung</string>
+    <string name="prefCalibrateDesc">Hier drücken um einen guten Platz für das Gerät auf dem Bett zu finden.</string>
+    <string name="prefCustomWarn">ACHTUNG: Beim Ändern dieser Einstellungen ist Vorsicht geboten, da sie direkten Einfluss auf die Kernmechaniken haben!</string>
+    <string name="prefPrefireTime">Alarm-Auslösezeitfenster</string>
+    <string name="prefPrefireTimeDesc">Zeitfenster in dem ein Alarm vor der eingestellten Zeit auslösen kann [in Minuten].</string>
+    <string name="prefTime">Alarmzeit</string>
+    <string name="prefRec">Alarm Wiederholung</string>
+    <string name="prefRecDay">Jeden Tag</string>
+    <string name="prefRecWeek">Jede Woche</string>
+    <string name="prefRecOnce">Einmalig</string>
+    <string name="prefAMessage">Alarm-Nachricht</string>
+    <string name="prefSnd">Alarm Sound</string>
+    <string name="prefReset">Einstellungen zurücksetzen</string>
+    <string name="prefResetDesc">Setzt alle benutzerdefinierten Optionen auf ihre Werkseinstellungen zurück.</string>
+    <string name="prefReport">Fehlerbericht senden</string>
+    <string name="prefReportDesc">Option anzeigen um Fehlerbericht per E-Mail zu senden.</string>
+
+    <string-array name="prefSoundArray">
+        <item>(keine Änderung)</item>
+        <item>Interne Sounds</item>
+        <item>Lokale Musikdatei</item>
+        <item>Klingeltöne</item>
+        <item>Internet (-Radio) Stream</item>
+        <item>Zufällig</item>
+        <item>Keinen (Stiller Alarm)</item>
+    </string-array>
+    <string-array name="prefOnSleepArray">
+        <item>Nachfragen</item>
+        <item>Monitor starten</item>
+        <item>App ausblenden</item>
+        <item>Nichts tun</item>
+    </string-array>
+    <string-array name="prefCommitArray">
+        <item>Schieber</item>
+        <item>Zählspiel</item>
+        <item>Mathe</item>
+        <item>Nichts</item>
+    </string-array>
+    <string-array name="prefCrippleModes">
+        <item>Display-Auto-On benutzen</item>
+        <item>Ladekabel verwenden</item>
+        <item>Kein Workaround</item>
+    </string-array>
+    <string-array name="timeMediumArray">
+        <item>30 Sekunden</item>
+        <item>1 Minute</item>
+        <item>2 Minuten</item>
+        <item>3 Minuten</item>
+        <item>5 Minuten</item>
+        <item>10 Minuten</item>
+        <item>15 Minuten</item>
+        <item>30 Minuten</item>
+    </string-array>
+    <string-array name="arrayDreamEmotion">
+        <item>Scham/Erniedrigung</item>
+        <item>Furcht/Panik</item>
+        <item>Traurigkeit/Kummer</item>
+        <item>Zorn/Wut</item>
+        <item>Abscheu/Ekel</item>
+        <item>Freude/Ekstase</item>
+        <item>Überraschung/Erstaunen</item>
+        <item>Neugierde/Erwartung</item>
+    </string-array>
+    <string-array name="arrayDaysAbbr">
+        <item>Mo</item>
+        <item>Di</item>
+        <item>Mi</item>
+        <item>Do</item>
+        <item>Fr</item>
+        <item>Sa</item>
+        <item>So</item>
+    </string-array>
+    <string-array name="alarmPreset">
+        <item>(setzen in...)</item>
+        <item>6 Stunden</item>
+        <item>7 Stunden</item>
+        <item>8 Stunden</item>
+        <item>9 Stunden</item>
+    </string-array>
+    
+        <string name="devtestScreenOff">Teste Sensor/Display Interaktion...\nSchließen Sie diese Aktivität nicht bis sie beendet wurde!\n\nBitte schalten Sie ihr <b>Geräte-Display</b> aus, indem Sie den entsprechenden <b>HARDWARE</b>-Knopf an ihrem Gerät drücken, oder einfach warten bis es automatisch ausgeschaltet wird.\n\nWarten Sie 2 Sekunden und schalten Sie es wieder an.</string> 
+        <string name="devtestFirstFail">Test <b>FEHLGESCHLAGEN</b>.
+\n
+\nLeider kann ihr Handy keine Sensordaten liefern, während der Bildschirm ausgeschaltet ist.
+\n\nCyclosleep wird auf ihrem Handy <b>NICHT</b> korrekt funktionieren können!
+\n\nBitte lesen Sie die Informationen auf http://gradlspace.com/cys/fwbug durch.
+\nSie können <i>Weiter</i> drücken um einen Work-Around auszuprobieren.</string>
+
+<string name="devtestFirstSuccess">Test <b>ERFOLGREICH</b>.
+\n
+\nAlles ist super. Ihr Sensor kann Daten liefern während das Display deaktiviert ist.
+\nDrücken Sie <i>Fertig</i> um die Test-Aktivität zu beenden.</string>
+
+    <string name="devtestSecond">Wie auf http://gradlspace.com/cys/fwbug beschrieben, werden wir jetzt einen Work-Around ausprobieren.
+\nWenn dies auch nicht funktioniert, werden Sie nicht in der Lage sein mit Ihrem Handy-Modell die Schlafphasendetektion von Cyclosleep zu nutzen.
+\nEs liegt an Ihnen, ob Sie das Programm trotzdem ohne Schlafphasenerkennung nutzen wollen. Allerdings empfehlen wir, dass Sie die App zurückgeben/deinstallieren um schlechten Benutzer-Erfahrungen vorzubeugen.
+\nSie können auch den Support kontaktieren, sollten Sie weitere Fragen haben. Gehen Sie dazu im Menü auf \"Über\" und \"Support kontaktieren\".
+\n
+\nBitte schalten Sie das Display nun wieder mit dem <b>Hardware</b>-Button für ein paar Sekunden aus. Es sollte sich automatisch wieder anschalten, sollte der Work-Around funktionieren.</string>
+
+        <string name="devtestSecondFail">Test <b>FEHLGESCHLAGEN</b>.
+\n
+\nDer Work-Around funktioniert nicht!
+\nCyclosleep wird nicht korrekt arbeiten können :-(</string>
+
+            <string name="devtestSecondSuccess">Test <b>ERFOLGREICH</b>.
+\n
+\nDer Work-Around scheint zu funktionieren.
+\nDer Nachteil dabei ist, dass ihr Display aktiviert sein muss, solange die Schlafphase überwacht wird.
+\nEntweder schließen Sie ihr Ladekabel die ganze Nacht an, oder Sie müssen mit sehr hohem Akkuverbrauch rechnen.
+\n</string>
+    
+        <string name="textSupport">Support kontaktieren</string>
+    
+        <string name="fauUpload">Zur Universitäts-DB hochladen</string>
+        
+        
+        <string name="deleteDlgTitle">Aufzeichnung löschen?</string>
+    
+        <string name="deleteDlgMsg">Wirklich diesen Eintrag und alle damit verbundenen Daten/Traum-Dateien löschen?</string>
+</resources>

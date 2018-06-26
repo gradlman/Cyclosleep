@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global App Strings -->
+    <string name="hello">Welcome to Cyclosleep</string>
+    <string name="app_name">Cyclosleep</string>
+    <string name="textCysUrl">http://gradlspace.com/cys/</string>
+    <string name="textCysSupport">support@gradlspace.com</string>
+    <string name="textCopyright">Copyright 2011-2012 gradlspace.com.\nAll rights reserved.</string>
+    <string name="textLicences">Nothing.</string>
+    <string name="textNotifyActive">Cyclosleep active</string>
+
+    <!-- License checking status messages -->
+    <string name="check_license">Check license</string>
+    <string name="checking_license">Checking license...</string>
+    <string name="license_ok">License OK.</string>
+    <string name="application_error">Application error: %1$s</string>
+
+    <!-- Unlicensed dialog messages -->
+    <string name="unlicensed_dialog_title">Application license expired</string>
+    <string name="unlicensed_dialog_body">The license information cached from Android Market has expired. The License Checker could not retrieve a valid license response.\nThere might be a problem with your connection to the Android Market.\nPlease make sure your Internet connection is active/working and press \"Retry\".\nFor further information visit http://gradlspace.com/cys/faq</string>
+
+    <!-- General purpose text -->
+    <string name="textNull"></string>
+    <string name="textBuy">Buy app</string>
+    <string name="textExit">Exit</string>
+    <string name="textYes">Yes</string>
+    <string name="textNo">No</string>
+    <string name="textRetry">Retry</string>
+    <string name="textCancel">Cancel</string>
+    <string name="textNotSet">Not set</string>
+    <string name="textMonitor">Monitor</string>
+    <string name="textOptions">Options</string>
+    <string name="textCalibrate">Calibrate</string>
+    <string name="textAnalyzer">Analyzer</string>
+    <string name="textViewer">Viewer</string>
+    <string name="textAlarmDismiss">Dismiss</string>
+    <string name="textGo">Go!</string>
+    <string name="textSave">Save</string>
+    <string name="textAbout">About</string>
+    <string name="textEnterUrl">Enter URL</string>
+    <string name="textNext">Next</string>
+    <string name="textSkip">Skip</string>
+    <string name="textBack">Back</string>
+    <string name="textSelect">Select</string>
+    <string name="textPrevious">Previous</string>
+    <string name="textContinue">Continue</string>
+    <string name="textClickToView">Click to view</string>
+    <string name="textSet">Set</string>
+    <string name="textStart">Start</string>
+    <string name="textStop">Stop</string>
+    <string name="textAccept">Accept</string>
+    <string name="textReject">Don\'t accept</string>
+    <string name="textUnknown">Unknown</string>
+    <string name="textPurge">Purge</string>
+    <string name="textSort">Sort</string>
+    <string name="textDelete">Delete</string>
+    <string name="textView">View</string>
+    <string name="textViewHypno">View Hypnogram</string>
+    <string name="textViewDream">View Dream</string>
+    <string name="textNA">n/a</string>
+    <string name="textCalibration">Calibration</string>
+    <string name="textCalibrationMode">Calibration Mode</string>
+    <string name="textOk">OK</string>
+    <string name="textReport">Report...</string>
+    <string name="textDetails">Details</string>
+    <string name="textHelp">Help</string>
+    <string name="textDefault">Default</string>
+    <string name="textClose">Close</string>
+    <string name="textEmail">Email</string>
+    <string name="textEmailHypno">Email Hypnogram</string>
+    <string name="textEmailDream">Email Dream</string>
+    <string name="textRating">Rating</string>
+    <string name="textTest">Test</string>
+    <string name="textTestPrev">Test/Preview</string>
+    <string name="textDecSens">Dec Sens.</string>
+    <string name="textIncSens">Inc Sens.</string>
+    <string name="textZip">Compress</string>
+    <string name="textDate">Date</string>
+    <string name="textStatus">Status:</string>
+    <string name="textShare">Share</string>
+    <string name="textBattery">Battery</string>
+    <string name="textShowRawFiles">Show source files</string>
+    <string name="textSleepLog">Show sleep log</string>
+    <string name="textFinish">Finish</string>
+    <string name="textStats">Statistics</string>
+    <string name="textPreview">Preview</string>
+    <string name="textSendXDF">Send as OpenXDF</string>
+    <string name="textSendEDF">Send as EDF</string>
+
+    <!-- Alarm related text -->
+    <string name="textEditAlarm">Edit Alarm</string>
+    <string name="textMainDisabled">Disable All Alarms</string>
+    <string name="textSleepNow">Go to Bed!</string>
+    <string name="textQuickAlarm">Quick Alarm</string>
+    <string name="textAlarmMainDesc">Set Alarm (#1):</string>
+    <string name="textQuickTimerAlert">Quick Timer Alert!</string>
+    <string name="textQuickTimerInfo">Time is up.</string>
+    <string name="textQuickTimer">Timer</string>
+    <string name="textUsesAlarm1">Uses settings of \"Alarm 1\"</string>
+    <string name="textSleepStart">SleepMode enabled. Just place the handheld on the bed now. Good night!</string>
+    <string name="textActiveTriggers">Active Alarms:</string>
+    <string name="textSleepMode">SleepMode</string>
+    <string name="textSleeping">Sleeping</string>
+    <string name="textNextAlarm">Next:</string>
+    <string name="textLastHypno">Last Hypnogram</string>
+    <string name="textDialogAskMonitorTitle">Sleep Now</string>
+    <string name="textDialogAskMonitor">Start the Monitor now?</string>
+    <string name="textAboutNight">About last night...</string>
+    <string name="textMainStatus">%1$d active alarms.\nNext: %2$s</string>
+    <string name="textTriggerWnd">Next Alarm between </string>
+    <string name="textMainStats">Avg. sleep duration:</string>
+    <string name="textPrefireMon">Time window for alarms to pre-fire before actual alarm time [in minutes].</string>
+    <string name="textStopMon">Stop Monitor</string>
+
+    <!-- Dream related text -->
+    <string name="textDream">Dream</string>
+    <string name="textDreamTheme">Think of a short Theme / Headline describing the Dream</string>
+    <string name="textDreamThemeShort">Theme / Headline</string>
+    <string name="textEmotion">Dominant Emotion</string>
+    <string name="textDreamText">Detailed Dream Description</string>
+    <string name="textDreamRate">Rate the Dream intuitively</string>
+
+    <!-- Sleep Cycle related -->
+    <string name="textSleep">Sleep</string>
+    <string name="textRateSleep">Rate the sleep</string>
+    <string name="textStageDeep">Deep Sleep</string>
+    <string name="textStageTwilight">Int Sleep</string>
+    <string name="textStageDead">Dead</string>
+    <string name="textStageRem">REM</string>
+    <string name="textStageDawn">Near-wake</string>
+    <string name="textStageAwake">Awake</string>
+    <string name="textTimeSlept">Quiet Sleep duration</string>
+    <string name="textDuration">Duration</string>
+    <string name="textSleepDurations">Sleep Durations</string>
+    
+    <!-- Calibration Utility -->
+    <string name="calibrateIntro">Welcome to the Calibration Utility! This tool will help you to find a good place for the handheld on your bed and ensure the functionality of the detector. You may press <i>Back</i> at any time to exit the calibration utility.</string>
+    <string name="calibrateExplain">After pressing \"Go!\", place your handheld onto your bed and tuck yourself in. You will hear a sound every time you move enough for the sensors to recognize your movement. Try turning around in your bed and listen for the event sound. If you don\'t hear a sound even while moving heavily, you have to find another place for the handheld. Try experimenting with various positions to find one where you can hear the trigger sound during movements but not while you lie still. In most cases the best position is under your pillow.</string>
+    <string name="calibrateFinish">Movement detected. Suggested Threshold Multiplier: %1$.2f\nClick Save to set the suggested value and finish calibration.</string>
+    <string name="calibrateWaiting">Waiting... </string>
+    <string name="calibrateFailed">No peak could be detected. Probably the place you chose for the handheld is not suitable. Make sure that you place it in such a way that your movements can be detected by the handheld\'s motion sensor.</string>
+    
+    <!-- Hints / Tips / Dialogs -->
+    <string name="textInfoSeePrefs">Go to Menu > Options for customization.</string>
+    <string name="textJustClickBack">\"Back\" will apply all changes. To cancel, click the button at the bottom.</string>
+    <string name="textExplorerHint">Long-press an item to show the context menu.</string>
+    <string name="textPressStart">Press Start to begin calibration.</string>
+    <string name="textResetPrefs">Reset Preferences?</string>
+    <string name="hintMainAlarm">(use the input boxes or the slider)</string>
+    <string name="textResetPrefsBody">Really reset all preferences to their default values?</string>
+    <string name="textReallyExit">Do you want to quit? This will cancel all active alarms and timers!\nPress Close if you just want to exit the program but keep the alarms active.</string>
+    <string name="textNeedAlarms">You can only activate SleepMode if there is at least one Alarm enabled.</string>
+    <string name="textArchived">%1$d files archived.</string>
+    <string name="textPurged">%1$d files deleted.</string>
+    <string name="textPurgeFiles">Purge all files or just the outdated ones?</string>
+    <string name="textPurgeAll">Purge ALL</string>
+    <string name="textPurgeOut">Only Outdated</string>
+    <string name="textHelpViewer">You may use gestures to navigate the views. Press the \"Back\" button on your handheld to exit the viewer.</string>
+    <string name="textHelpMain">Select an alarm time by dragging the bar in the middle of the screen. Then press \"Set\" to activate the alarm. Afterwards press \"Go to Bed!\", put your handheld under your pillow and start sleeping.</string>
+    <string name="hintRadioStream">Please remember to turn on your wLAN or packet radio service before starting the SleepMode! It will be reactivated during the alarm to download the stream.</string>
+    <string name="hintPressAlarm">Press alarm text to change settings.</string>
+    <string name="textStopMonQuestion">Really stop the monitor? The alarm will not be triggered by sleep phase then!</string>
+    <string name="helpMonitor">The monitor tracks your movements during the night. If you close it, the alarm can not be triggered by your sleep phase.</string>
+    
+
+    <!-- Errors / Warnings -->
+    <string name="textError">Error</string>
+    <string name="textErrorSendReport">Please press the Report button to review and send an autogenerated error report via email to us. We will then contact you as soon as possible.\nYou may also contact our support directly via support@gradlspace.com.</string>
+    <string name="textErrorSupport">Please contact the support: support@gradlspace.com</string>
+    <string name="textErrorFreeSpace">Error! Not enough free space available on the filesystem!</string>
+    <string name="textErrorMedia">Error playing media. Couldn\'t access file/stream or invalid format.</string>
+    <string name="textErrorIO">Error accessing the filesystem!</string>
+    <string name="textUnknownFormat">Unknown format.</string>
+    <string name="textErrorText">The application encountered an error.\n\nPress the \"Report\" button to send an error report containing the text shown in the \"Details\" view.\n\nPress \"Ok\" to close this window. Depending on the severity of the error the Application may be closed as well. In that case you can just restart it.</string>
+    <string name="errorBatteryLow">Low battery! Monitoring has been stopped. Always make sure that your battery-level is high enough before going to sleep.</string>
+    <string name="errorBatteryHigh">Battery temperature critical! Monitoring has been stopped. Please contact the support.</string>
+    <string name="errorWakelock">Couldn\'t acquire wakelock. This could be caused by a known bug in several firmware versions of a bunch of handheld vendors. Please try to update to the latest firmware. If it is still not working, contact our support at support@gradlspace.com</string>
+    <string name="errorNoEmailClient">Couldn\'t find suitable email clients.</string>
+    <string name="errorNotSupported">Not supported!</string>
+    <string name="errorCrippleDevice">The firmware on your device contains a severe bug that prevents normal operation of Cyclosleep.\nThere are several options to handle this issue:\n\n<b>1.</b> Check for the latest firmware for your device. The bug was fixed in all Android versions above 2.3.3.\n\n<b>2.</b> Try to activate one of the Bug-Workaround options. See the FAQ for further information.\n\n<b>3.</b> Activate the SimpleMode not using any sleep stage detection.\n\n<b>4.</b> If you don\'t know what a bug or a firmware is, and have no interest in learning about those things, please consider uninstalling Cyclosleep to prevent bad user-experience :-(</string>
+    <string name="errorCrippleUseWorkaround">Use Workaround</string>
+    <string name="errorCrippleUseSimpleMode">Use SimpleMode</string>
+    <string name="errorNoFile">No file available.</string>
+ 
+    
+
+    <!-- EULA related -->
+    <string name="textEula">End User License Agreement</string>
+    <string name="textEulaText">By clicking the \"Accept\" button, you agree that you have read, understood and accept all the terms and conditions in the License Agreement, found
+ at\nhttp://gradlspace.com/cys/eula\n\nIn particular, you accept and agree that the authors of
+ this software can, under no circumstances whatsoever, be held accountable in any way for damage caused to your device running this program. Although very unlikely,
+ it can not be ruled out that you damage your device unintentionally while sleeping. Recommendations to reduce that risk are given during the introduction on the next screen and
+ on the web at\nhttp://gradlspace.com/cys/safety\n\nSince this program is part of an ongoing research project at the <i>University of Erlangen-Nuremberg</i> and the <i>University Hospital Erlangen</i>, it might be possible that
+ you get asked about voluntarily participating in academic studies/surveys by submitting nonpersonal information. Further details will be supplied in those particular cases. Rest assured
+ that no data directly processed by our program-packages will ever be submitted, gathered or retrieved without you opting in on a case-by-case basis.\nIf you do not ever wish to participate or
+ support the related scientific research, you can deactivate the entire module in the options-screen.</string>
+ 
+        <string name="textFAU">This app is part of a research project at the University of Erlangen-Nuremberg and the Sleep Laboratory of the University Hospital Erlangen.\n
+ Therefore you may support the research at any time by submitting anonymous sleep statistics. To do that, just open the Viewer and select \"Upload to FAU DB\".\n</string>
+ 
+
+    <!-- Intro texts -->
+    <string name="textIntroName">Introduction</string>
+    <string name="textTutorial">Tutorial</string>
+    
+    <string name="textIntroShort">Quickstart\n\nIn the main screen, enter the time when you wish to wake up, either by dragging the slider or entering the time directly into the text field.\n\nThen, press \"Set\", \"Go to bed\" and put your phone somewhere in your bed. Preferably under your pillow or somewhere near it (see picture below).\n\nMake sure it is secured somehow, e.g. place it under your bed sheet. Only turn off the screen, not the phone!\n\nCyclosleep will wake you up at the set time at the latest. Depending on your settings there is a given time window of 10-50 minutes in which Cyclosleep will also trigger the alarm in advance depending on your sleep phase. Please tune this time window depending on your experience with it and your sleeping habits.\nThe threshold values are calibrated automatically by Cyclosleep over the course of three to seven days. So please be patient if you are woken up a bit early in the first two days.</string>
+    
+    <string name="textIntroWelcome">Welcome to Cyclosleep.\n\nSince this seems to be the first time you start this App, we would like to introduce
+ you to the basic usage of this program.\n\nIf you are already familiar with it you may press your handheld\'s back-button.</string>
+ 
+    <string name="textIntroPart02">Go to the options menu to customize the behavior of the app.\nWe recommend visiting the website and reading the online manual for more detailed instructions and explanations.\n\nhttp://gradlspace.com/cys\n\n
+ There you will also find additional information about the associated research projects at the University Erlangen-Nuremberg and how you may support them.</string>
+   
+    <string name="textIntroPart99">We will now test your device\'s accelerometer. On several older phones accelerometer readings can\'t be acquired when the device display is off which would break the functionality of Cyclosleep.</string>
+
+    <!-- Preferences text -->
+    <string name="prefAlarmAdv">Alarm Advanced</string>
+    <string name="prefAlarms">Alarms</string>
+    <string name="prefAlarmAdvDesc">Advanced settings for alarms, events and responses.</string>
+    <string name="prefAaTimeout">Alarm Timeout</string>
+    <string name="prefAaTimeoutDesc">The timeout for all alarm sounds/effects.</string>
+    <string name="prefAaVibe">Disable Vibrator</string>
+    <string name="prefAaVibeDesc">Don\'t vibrate the handheld.</string>
+    <string name="prefAaSound">Disable Sound</string>
+    <string name="prefAaSoundDesc">Don\'t use any sound effects.</string>
+    <string name="prefAaNoSilent">Ignore Silent Mode</string>
+    <string name="prefAaNoSilentDesc">If activated, the alarm sounds are played even if the phone is in silent mode.</string>
+    <string name="prefAaRiot">Riot</string>
+    <string name="prefAaRiotDesc">Play a more annoying sound in the last quarter of the timeout if the alarm isn\'t committed.</string>
+    <string name="prefAaCommit">Commit Approval</string>
+    <string name="prefAaCommitDlg">Commit Approval Action</string>
+    <string name="prefAaCommitDesc">Additional action that has to be performed before the alarm is committed.</string>
+    <string name="prefDream">Dreams</string>
+    <string name="prefDreamDesc">Configure options to help remember your dreams.</string>
+    <string name="prefDreamAsk">Ask on alarms</string>
+    <string name="prefDreamAskDesc">Ask about dreams after alarm dialog was dismissed.</string>
+    <string name="prefDreamAsync">Shift alarms</string>
+    <string name="prefDreamAsyncDesc">Tries to wake you in REM phases. CAUTION: use carefully, this will disturb your sleep!</string>
+    <string name="prefSns">Social Networks</string>
+    <string name="prefSnsDesc">Share it.</string>
+    <string name="prefSnsEnable">Enable Social Network Integration</string>
+    <string name="prefSnsEnableDesc">Use and configure social network integration.</string>
+    <string name="prefSnsEmail">Email</string>
+    <string name="prefSnsEmailDesc">Show additional actions for mailing dreams and hypnograms.</string>
+    <string name="prefAlarmSetup">Alarm Setup</string>
+    <string name="prefMonitoring">Monitoring</string>
+    <string name="prefSetStream">Set stream URL</string>
+    <string name="prefSleepRating">Sleep Rating</string>
+    <string name="prefSleepRatingDesc">Enables you to rate your sleep after dismissing the alarm.</string>
+    <string name="prefHints">Show hints</string>
+    <string name="prefHintsDesc">Show usage hints and tips.</string>
+    <string name="prefRandomSound">Use a random song</string>
+    <string name="prefRandomSoundDesc">Each time the alarm is triggered a random sound file on your device is used.</string>
+    <string name="prefIRadio">Use Internet radio</string>
+    <string name="prefIRadioDesc">Play your favorite Internet radio station as alarm sound.</string>
+    <string name="prefSunrise">Use the sunrise as time</string>
+    <string name="prefSunriseDesc">This uses the time of the sunrise as alarm time.</string>
+    <string name="prefNoDup">Don\'t duplicate alarm</string>
+    <string name="prefNoDupDesc">Activate this to prevent alarms from going off twice. (1. sleep stage induced &amp; 2. on the set time)</string>
+    <string name="prefCustom">Custom Mechanics</string>
+    <string name="prefCustomDesc">Fine-tune the detection/alarm mechanics. (Expert!)</string>
+    <string name="prefCustomStage">Set custom threshold value.</string>
+    <string name="prefSPThreshold">Movement threshold</string>
+    <string name="prefSPThresholdDesc">Threshold value for movement recognition [12-500 int]</string>
+    <string name="prefNoAutoAdapt">Disable Auto Adaption</string>
+    <string name="prefNoAutoAdaptDesc">Deactivates the automatic adjustment of threshold values. Enables manual override.</string>
+    <string name="prefStreamTimeout">Stream Timeout</string>
+    <string name="prefStreamTimeoutDesc">Retry timeout for reaching a stream server for audio playback [seconds].</string>
+
+    <!-- Speech Output -->
+    <string name="prefSpeech">Speech Synthesis</string>
+    <string name="prefSpeechDesc">Use Android\'s Text-To-Speech engine for announcements.</string>
+    <string name="prefSpeechEnable">Use TTS</string>
+    <string name="prefSpeechEnableDesc">Initialize TTS Engine and check data availability.</string>
+    <string name="prefSpeechAtime">Announce Time</string>
+    <string name="prefSpeechAtimeDesc">Regularly tells you what time it is during an alarm.</string>
+    <string name="prefSpeechMessage">Announce Message</string>
+    <string name="prefSpeechMessageDesc">Regularly reads you the message you set for the alarm.</string>
+    <string name="prefSpeechInterval">Announce Interval</string>
+    <string name="prefSpeechIntervalDesc">At what interval the announces should be made during an alarm [in minutes].</string>
+    <string name="prefSpeechTextFormat">It is %I:%M %p.</string>
+
+    <!-- SleepMode prefs -->
+    <string name="prefApMode">Airplane Mode</string>
+    <string name="prefApModeDesc">Activate Airplane Mode during SleepMode, disabling all radios in the device.</string>
+    <string name="prefOnSleepNow">SleepNow Action</string>
+    <string name="prefOnSleepNowDesc">Action to perform when activating SleepMode.</string>
+    <string name="prefAoMode">Disable Auto-Orientation</string>
+    <string name="prefAoModeDesc">Deactivates automatic screen orientation changes while monitoring. (Recommended)</string>
+    <string name="prefSleepMode">During SleepMode/Monitoring</string>
+    <string name="prefUseCripple">Sensor-Bug-Workaround</string>
+    <string name="prefUseCrippleDesc">Select a work-around for the famous sensor-tracking bug. (see FAQ!)</string>
+
+    <!-- Data Storage prefs -->
+    <string name="prefData">Data Storage</string>
+    <string name="prefDataDesc">Save/Organize/Send data files.</string>
+    <string name="prefEnableData">Enable Data Storage</string>
+    <string name="prefEnableDataDesc">Write all collected data to disk. If this is deactivated you can only view live reports.</string>
+    <string name="prefAutoCleanup">Automatic cleanup</string>
+    <string name="prefAutoCleanupDesc">Automatically prune data storage, deleting old or empty data files.</string>
+    <string name="prefNoSensorData">Exclude Raw Data</string>
+    <string name="prefNoSensorDataDesc">Don\'t save raw sensor data. (Recommended)</string>
+    <string name="prefDataPath">Data Storage Path</string>
+    <string name="prefDataPathDesc">Enter a directory if you don\'t want to use the default (sdcard).</string>
+    <string name="prefExpire">Expiration time</string>
+    <string name="prefExpireDesc">Expiration time, in days, for data files.</string>
+    <string name="prefNoScience">Deactivate Science</string>
+    <string name="prefNoScienceDesc">If this is enabled you will never be asked about supporting academic research.</string>
+    <string name="prefDataZip">Compress Raw Data</string>
+    <string name="prefDataZipDesc">Compress raw data files. Before sending them and local files after 7 days.</string>
+    <string name="prefDataIncHypno">Auto-purge Hypnograms</string>
+    <string name="prefDataIncHypnoDesc">Include hypnogram files when auto-purging data files.</string>
+    <string name="prefDataIncDream">Auto-purge Dreams</string>
+    <string name="prefDataIncDreamDesc">Include dream files when auto-purging data files.</string>
+
+    <!-- Global prefs -->
+    <string name="prefGlobal">Global</string>
+    <string name="prefTimer">Show QuickTimer</string>
+    <string name="prefTimerDesc">Shows a QuickTimer on the main screen for simple timing. (Requires restart)</string>
+    <string name="prefIcon">Use Notifications</string>
+    <string name="prefIconDesc">Keep a persistent icon in the notification area while triggers are active.</string>
+    <string name="prefSimple">Simple Mode</string>
+    <string name="prefSimpleDesc">Deactivates most tracking mechanics making this a simple - only time based - alarm clock.</string>
+    <string name="prefCalibrate">Calibration Activity</string>
+    <string name="prefCalibrateDesc">Use this Activity to find a good spot for your handheld on the bed.</string>
+    <string name="prefCustomWarn">CAUTION: Be very careful changing these settings. They directly affect core mechanics of the alarm and detection components.</string>
+    <string name="prefPrefireTime">Alarm Pre-Fire Window</string>
+    <string name="prefPrefireTimeDesc">Time window in which alarms are allowed to pre-fire [in minutes]</string>
+    <string name="prefTime">Alarm Time</string>
+    <string name="prefRec">Alarm Recurrence</string>
+    <string name="prefRecDay">Every Day</string>
+    <string name="prefRecWeek">Every Week</string>
+    <string name="prefRecOnce">Once</string>
+    <string name="prefAMessage">Alarm Message Text</string>
+    <string name="prefSnd">Alarm Sound</string>
+    <string name="prefReset">Reset Preferences</string>
+    <string name="prefResetDesc">Reset all custom preferences to their factory-default values.</string>
+    <string name="prefReport">Send Error Reports</string>
+    <string name="prefReportDesc">Show option to send crash/error reports via mail.</string>
+
+    <string-array name="prefSoundArray">
+        <item>(current)</item>
+        <item>Internal Sounds</item>
+        <item>Local Music File</item>
+        <item>Ringtone</item>
+        <item>Internet (Radio) Stream</item>
+        <item>Random</item>
+        <item>None (silent alarm)</item>
+    </string-array>
+    <string-array name="prefOnSleepArray">
+        <item>Ask what to do</item>
+        <item>Start Monitor</item>
+        <item>Hide App</item>
+        <item>Do nothing</item>
+    </string-array>
+    <string-array name="prefCommitArray">
+        <item>Slider button</item>
+        <item>Count blocks</item>
+        <item>Math</item>
+        <item>Nothing</item>
+    </string-array>
+    <string-array name="prefCrippleModes">
+        <item>Use Display-Auto-On</item>
+        <item>Use Power-Cable</item>
+        <item>No Workaround</item>
+    </string-array>
+    <string-array name="timeMediumArray">
+        <item>30 Seconds</item>
+        <item>1 Minute</item>
+        <item>2 Minutes</item>
+        <item>3 Minutes</item>
+        <item>5 Minutes</item>
+        <item>10 Minutes</item>
+        <item>15 Minutes</item>
+        <item>30 Minutes</item>
+    </string-array>
+    <string-array name="arrayDreamEmotion">
+        <item>Shame/Humiliation</item>
+        <item>Fear/Terror</item>
+        <item>Distress/Anguish</item>
+        <item>Anger/Rage</item>
+        <item>Contempt/Disgust</item>
+        <item>Enjoyment/Joy</item>
+        <item>Surprise</item>
+        <item>Interest/Excitement</item>
+    </string-array>
+    <string-array name="arrayDaysAbbr">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+    <string-array name="alarmPreset">
+        <item>(preset in...)</item>
+        <item>6 hours</item>
+        <item>7 hours</item>
+        <item>8 hours</item>
+        <item>9 hours</item>
+    </string-array>
+        <string name="devtestScreenOff">Testing Sensor/Screen interaction...\nDo not close or exit this activity until it finished!\n\nPlease turn off your <b>device display</b> by pressing the respective <b>HARDWARE</b>-button or just wait for it to be turned off automatically.\n\nWait 2 seconds and turn it on again.</string> 
+        <string name="devtestFirstFail">Test <b>FAILED</b>.\n\nUnfortunately, your phone is not capable of providing sensor data while the screen is turned off.\n\nCyclosleep will <b>NOT</b> be able to work correctly!
+\n\nPlease read http://gradlspace.com/cys/fwbug for further information.
+\nYou may press <i>Next</i> to try a work-around.</string>
+
+<string name="devtestFirstSuccess">Test <b>PASSED</b>.
+\n
+\nEverything is fine. Your Sensor is capable of providing data while the screen is turned off.
+\nClick <i>Finish</i> to close the Test-Activity.</string>
+
+    <string name="devtestSecond">As detailed on http://gradlspace.com/cys/fwbug we will now try a work-around.
+\nIf this isn\'t working as well, you will not be able to use Cyclosleep\'s sleep tracking functions.
+\nIt is up to you to decide whether you would like to use the program without sleep tracking. However we recommend that you uninstall the App to avoid bad user experience.
+\nYou may also contact the support for further inquiries. Go to Menu-About-Contact Support.
+\n
+\nPlease turn off the screen now with the <b>hardware</b>-button and wait a few seconds. The screen should turn on automatically again if the work-around is successful.</string>
+
+        <string name="devtestSecondFail">Test <b>FAILED</b>.
+\n
+\nThe work-around was not successful.
+\nCyclosleep will not work correctly. :-(</string>
+
+            <string name="devtestSecondSuccess">Test <b>PASSED</b>.
+\n
+\nThe work-around seems to work.
+\nThe downside is that your display has to be active while tracking.
+\nYou either have to connect the power-cable all night, or expect serious battery drainage.
+\n</string>
+
+    <string name="textSupport">Contact Support</string>
+    
+        <string name="fauUpload">Upload to University DB</string>
+    
+        <string name="fauUploadDlgTitle">Upload Sleep Data</string>
+    
+        <string name="fauUploadDlgMsg">By clicking \"Upload\", you agree that anonymized sleep data from your device is uploaded to the database servers of the University Erlangen (FAU). You accept and agree to the terms and conditions given here for uploading statistical data.\n\nAll data uploaded will only be used for scientific purposes.\nTo provide additional safety the datafile will be attached to an email which you have to send manually to complete the upload process.</string>
+    
+        <string name="textUpload">Upload</string>
+    
+        <string name="deleteDlgTitle">Delete Record?</string>
+    
+        <string name="deleteDlgMsg">Really delete the sleep record and all associated data/dream files?</string>
+    
+        <string name="faupEnabled">Collect survey data for upload</string>
+    
+        <string name="faupStatus">"Data collected: "</string>
+
+</resources>

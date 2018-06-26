@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item android:id="@+id/viewHypno" android:icon="@drawable/ic_menu_view" android:title="@string/textViewHypno"></item>
+	<item android:id="@+id/viewDream" android:icon="@drawable/ic_menu_view" android:title="@string/textViewDream"></item>
+	<item android:id="@+id/emailHypno" android:icon="@drawable/ic_menu_compose" android:title="@string/textEmailHypno"></item>
+	<item android:id="@+id/emailDream" android:icon="@drawable/ic_menu_compose" android:title="@string/textEmailDream"></item>
+	<item android:id="@+id/share" android:icon="@drawable/ic_menu_upload" android:title="@string/textShare"></item>
+	<item android:id="@+id/sendxdf" android:icon="@drawable/ic_menu_compose" android:title="@string/textSendXDF" android:enabled="false"></item>
+	<item android:id="@+id/sendedf" android:icon="@drawable/ic_menu_compose" android:title="@string/textSendEDF" android:enabled="false"></item>
+	<item android:id="@+id/delete" android:icon="@drawable/ic_menu_delete" android:title="@string/textDelete"></item>
+	
+</menu>

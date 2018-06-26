@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gradlspace.cys"
+    android:versionCode="29"
+    android:versionName="1.03.6" android:installLocation="internalOnly" >
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10"/>
+    
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    
+    <uses-feature android:required="true" android:name="android.hardware.sensor.accelerometer"/>
+    
+     
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".activities.CyclosleepActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+                        
+        <receiver android:name=".TriggerHandler">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name=".NetworkReceiver">
+		    <intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+		    </intent-filter>
+		</receiver>
+        
+        <activity android:name=".activities.AlarmActivity"></activity>
+        <activity android:name=".activities.AlarmEditActivity"></activity>
+        <activity android:name=".activities.ViewerActivity"></activity>
+        <activity android:name=".activities.MonitorActivity"></activity>
+        <activity android:name=".activities.AboutActivity"></activity>
+        <activity android:name=".activities.RateActivity"></activity>
+        <activity android:name=".activities.OptionsActivity"></activity>
+        <activity android:name=".activities.SNSActivity"></activity>
+        <activity android:name=".activities.TriggerActivity"></activity>
+        <activity android:name=".activities.EmergencyActivity"></activity>
+        <activity android:name=".activities.IntroActivity"></activity>
+        <activity android:name=".activities.EulaActivity"></activity>
+        <activity android:name=".activities.ExplorerActivity"></activity>
+        <activity android:name=".activities.SleepLogActivity"></activity>
+        <activity android:name=".activities.ErrorActivity"></activity>
+        <activity android:name=".activities.DeviceTestActivity"></activity>
+        <activity android:name=".activities.StatsActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+
+	<item android:id="@+id/lasthypno" android:icon="@drawable/ic_menu_revert" android:title="@string/textLastHypno"></item>
+	<item android:id="@+id/viewer" android:icon="@drawable/ic_menu_view" android:title="@string/textViewer"></item>	
+	<item android:id="@+id/stats" android:icon="@drawable/ic_menu_friendslist" android:title="@string/textStats"></item>
+	<item android:id="@+id/options" android:icon="@drawable/ic_menu_preferences" android:title="@string/textOptions"></item>
+	<item android:id="@+id/disableall" android:icon="@drawable/ic_menu_block" android:title="@string/textMainDisabled"></item>
+	<item android:id="@+id/monitor" android:icon="@drawable/ic_menu_gallery" android:title="@string/textMonitor"></item>
+	<item android:id="@+id/about" android:icon="@drawable/ic_menu_info_details" android:title="@string/textAbout"></item>
+	<item android:id="@+id/help" android:icon="@drawable/ic_menu_help" android:title="@string/textHelp"></item>
+	<item android:id="@+id/exit" android:icon="@drawable/ic_menu_stop" android:title="@string/textExit"></item>
+	
+	</menu>

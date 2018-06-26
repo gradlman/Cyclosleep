@@ -1,0 +1,149 @@
+# view AndroidManifest.xml #generated:45
+-keep class com.gradlspace.cys.NetworkReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.gradlspace.cys.TriggerHandler { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.gradlspace.cys.activities.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.gradlspace.cys.activities.AlarmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.gradlspace.cys.activities.AlarmEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.gradlspace.cys.activities.CyclosleepActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.gradlspace.cys.activities.DeviceTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.gradlspace.cys.activities.EmergencyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.gradlspace.cys.activities.ErrorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.gradlspace.cys.activities.EulaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.gradlspace.cys.activities.ExplorerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.gradlspace.cys.activities.IntroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.gradlspace.cys.activities.MonitorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.gradlspace.cys.activities.OptionsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.gradlspace.cys.activities.RateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.gradlspace.cys.activities.SNSActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.gradlspace.cys.activities.SleepLogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class com.gradlspace.cys.activities.StatsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.gradlspace.cys.activities.TriggerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.gradlspace.cys.activities.ViewerActivity { <init>(...); }
+
+# view res/xml/prefs.xml #generated:12
+# view res/xml/prefs.xml #generated:16
+# view res/xml/prefs.xml #generated:20
+# view res/xml/prefs.xml #generated:8
+-keep class com.gradlspace.widgets.AlarmPreference { <init>(...); }
+
+# view res/layout/faup_survey.xml #generated:110
+# view res/layout/monitor.xml #generated:19
+# view res/layout/sleep_about.xml #generated:110
+# view res/layout/statistics.xml #generated:19
+# view res/layout/statistics.xml #generated:24
+# view res/layout/statistics.xml #generated:31
+# view res/layout/viewer.xml #generated:12
+-keep class com.gradlspace.widgets.HypnogramView { <init>(...); }
+
+# view res/layout/intro.xml #generated:17
+-keep class com.gradlspace.widgets.SafeViewFlipper { <init>(...); }
+
+# view res/layout/main.xml #generated:148
+-keep class com.gradlspace.widgets.TimeEdit { <init>(...); }
+
+# view res/layout/alarm_dismiss.xml #generated:13
+# view res/layout/device_test.xml #generated:16
+# view res/layout/monitor.xml #generated:14
+# view res/layout/statistics.xml #generated:14
+# view res/layout/viewer.xml #generated:7
+-keep class de.lme.plotview.PlotView { <init>(...); }
+
+# onClick res/layout/main.xml #generated:214
+-keepclassmembers class * { *** onClickAlarmButton(...); }
+
+# onClick res/layout/monitor.xml #generated:66
+-keepclassmembers class * { *** onClickCalibrate(...); }
+
+# onClick res/layout/alarm_edit.xml #generated:285
+# onClick res/layout/faup_survey.xml #generated:152
+# onClick res/layout/sleep_about.xml #generated:152
+-keepclassmembers class * { *** onClickCancel(...); }
+
+# onClick res/layout/about.xml #generated:86
+-keepclassmembers class * { *** onClickContact(...); }
+
+# onClick res/layout/alarm.xml #generated:18
+-keepclassmembers class * { *** onClickDismiss(...); }
+
+# onClick res/layout/about.xml #generated:71
+-keepclassmembers class * { *** onClickEula(...); }
+
+# onClick res/layout/main.xml #generated:303
+-keepclassmembers class * { *** onClickFaupDispatch(...); }
+
+# onClick res/layout/main.xml #generated:286
+-keepclassmembers class * { *** onClickFaupEnable(...); }
+
+# onClick res/layout/alarm_edit.xml #generated:297
+# onClick res/layout/faup_survey.xml #generated:164
+# onClick res/layout/sleep_about.xml #generated:164
+-keepclassmembers class * { *** onClickOk(...); }
+
+# onClick res/layout/alarm_edit.xml #generated:86
+-keepclassmembers class * { *** onClickPreview(...); }
+
+# onClick res/layout/main.xml #generated:382
+-keepclassmembers class * { *** onClickQuickTimer(...); }
+
+# onClick res/layout/main.xml #generated:447
+# onClick res/layout/main.xml #generated:458
+# onClick res/layout/main.xml #generated:469
+# onClick res/layout/main.xml #generated:480
+-keepclassmembers class * { *** onClickQuickTimerPreset(...); }
+
+# onClick res/layout/main.xml #generated:333
+-keepclassmembers class * { *** onClickSleepNow(...); }
+
+# onClick res/layout/device_test.xml #generated:28
+-keepclassmembers class * { *** onClickTest(...); }
+
+# onClick res/layout/main.xml #generated:422
+-keepclassmembers class * { *** onClickTimerButton(...); }
+
+# onClick res/layout/about.xml #generated:95
+-keepclassmembers class * { *** onClickTutorial(...); }
+
+# onClick res/layout/error.xml #generated:35
+-keepclassmembers class * { *** onOkClick(...); }
+
+# onClick res/layout/error.xml #generated:45
+-keepclassmembers class * { *** onReportClick(...); }
+

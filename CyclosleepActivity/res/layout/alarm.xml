@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alarmLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" android:keepScreenOn="true">
+
+    <TextView
+        android:id="@+id/lblClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="16:32"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="48dp" android:background="@drawable/bg_interaction" android:textColor="@color/color_text_important" android:typeface="monospace" android:gravity="center_horizontal" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btnDismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textAlarmDismiss" android:layout_marginTop="20dp" android:onClick="onClickDismiss" android:background="@drawable/btn_default" android:minHeight="60dp" android:minWidth="170dp" android:layout_marginBottom="20dp" android:textColor="@color/color_button_default"/>
+
+    <TextView
+        android:id="@+id/lblAlarmLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:layout_marginBottom="10dp" android:textColor="@color/color_text_semi"/>
+
+    <TextView
+        android:id="@+id/lblAlarmMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:typeface="serif" android:textColor="@color/color_text_static"/>
+
+</LinearLayout>

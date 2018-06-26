@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/frmDream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/def_border_u" android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/lblDreamMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textDream"
+                android:textAppearance="?android:attr/textAppearanceLarge" android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textEmotion"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/cmbEmotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:entries="@array/arrayDreamEmotion"/>
+            
+            <LinearLayout
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:layout_width="0px" android:layout_height="0px"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textDreamTheme"
+                android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginTop="5dp"
+                android:nextFocusUp="@+id/cmbEmotion" android:nextFocusLeft="@+id/cmbEmotion"/>
+
+            <EditText
+                android:id="@+id/txtDreamTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textDreamRate"
+                android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginTop="5dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingDream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:numStars="4" android:stepSize="1.0"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textDreamText"
+                android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/txtDreamText"
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:layout_weight="0.28"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frmSleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/def_border_u">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/textSleep"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" android:layout_marginBottom="15dp"/>
+
+            <com.gradlspace.widgets.HypnogramView
+                android:id="@+id/hypnoView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            
+            <TextView
+                android:id="@+id/lblSleepDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textRateSleep"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textRateSleep"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RatingBar
+                android:id="@+id/ratingSleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:numStars="4" android:stepSize="1.0"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_interaction" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_default"
+            android:minWidth="100dp"
+            android:onClick="onClickCancel"
+            android:text="@string/textSkip" android:textColor="@color/color_button_default" android:minHeight="40dp"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_default"
+            android:minWidth="100dp"
+            android:onClick="onClickOk"
+            android:text="@string/textSave" android:textColor="@color/color_button_default" android:minHeight="40dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

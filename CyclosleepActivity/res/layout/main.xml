@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/action_bar_background" android:layout_gravity="fill_vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/textActiveTriggers"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_text_static"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/lblActiveTriggers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_button_default"
+                android:textSize="14dp"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/textNextAlarm"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_text_static"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/lblNextTrigger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hh:mm"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_button_default"
+                android:textSize="14dp"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/textMainStats"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_text_static"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/lblMainStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.3 hours"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_text_semi"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/bg_interaction" android:layout_margin="5dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/textAlarmMainDesc"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_text_static" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hintMainAlarm"
+                    android:textColor="@color/color_text_static"
+                    android:textSize="10dp" android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" >
+                </LinearLayout>
+
+                <com.gradlspace.widgets.TimeEdit
+                    android:id="@+id/txtMainAlarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txt_default"
+                    android:gravity="center_horizontal"
+                    android:inputType="time"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:nextFocusDown="@+id/txtMainHours"
+                    android:nextFocusLeft="@+id/txtMainHours"
+                    android:nextFocusRight="@+id/txtMainHours"
+                    android:nextFocusUp="@+id/txtMainHours"
+                    android:selectAllOnFocus="true"
+                    android:text="10:23"
+                    android:textColor="@color/color_text_important"
+                    android:textColorHighlight="#80555555"
+                    android:textSize="26dp"
+                    android:typeface="monospace" android:width="95dp">
+                </com.gradlspace.widgets.TimeEdit>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:text="in"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_text_small" />
+
+                <EditText
+                    android:id="@+id/txtMainHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/txt_default"
+                    android:gravity="center_horizontal"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:nextFocusDown="@+id/txtMainAlarm"
+                    android:nextFocusLeft="@+id/txtMainAlarm"
+                    android:nextFocusRight="@+id/txtMainAlarm"
+                    android:nextFocusUp="@+id/txtMainAlarm"
+                    android:selectAllOnFocus="true"
+                    android:text="8.5"
+                    android:textColor="@color/color_text_semi"
+                    android:textColorHighlight="#80555555"
+                    android:textSize="20dp"
+                    android:typeface="monospace" android:width="70dp">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:text="h"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_text_small" />
+
+                <Button
+                    android:id="@+id/btnMainAlarmSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_default"
+                    android:minHeight="45dp"
+                    android:minWidth="80dp"
+                    android:onClick="onClickAlarmButton"
+                    android:text="@string/textSet"
+                    android:textColor="@color/color_button_default" android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <SeekBar
+                    android:id="@+id/seekerMainAlarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:max="288"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progressDrawable="@drawable/progress_horizontal_day" android:paddingTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/seekerMainAlarm"
+                    android:layout_below="@+id/seekerMainAlarm"
+                    android:text="00:00"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#a038526f" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/seekerMainAlarm"
+                    android:layout_below="@+id/seekerMainAlarm"
+                    android:text="24:00"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#a038526f" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seekerMainAlarm"
+                    android:layout_centerHorizontal="true"
+                    android:text="12:00"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#a038526f" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frameFaup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_interaction"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/btnFaupEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickFaupEnable"
+                android:text="@string/faupEnabled"
+                android:textColor="@color/color_text_static" />
+
+            <TextView
+                android:id="@+id/lblFaupStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data collected: 4 / 14"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_gr9"
+                android:textSize="12dp" android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/btnFaupDispatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_default"
+                android:minHeight="45dp"
+                android:minWidth="140dp"
+                android:onClick="onClickFaupDispatch"
+                android:text="@string/textUpload"
+                android:textColor="@color/color_button_default" android:layout_gravity="center_horizontal" android:layout_margin="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_interaction"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:text="@string/textSleepMode"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_text_static" />
+
+            <ToggleButton
+                android:id="@+id/btnSleepNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/toggle_button"
+                android:minHeight="60dp"
+                android:minWidth="140dp"
+                android:onClick="onClickSleepNow"
+                android:text="@string/textSleepNow"
+                android:textColor="@color/color_button_default"
+                android:textOff="@string/textSleepNow"
+                android:textOn="@string/textSleeping" android:layout_marginRight="20dp" android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lblStats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100% Battery"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_text_static"
+                    android:textSize="10dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarStats"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:progress="40"
+                    android:progressDrawable="@drawable/progress_horizontal"
+                    android:secondaryProgress="60" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frameTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblQuickTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_interaction"
+                android:clickable="true"
+                android:onClick="onClickQuickTimer"
+                android:text="@string/textQuickTimer"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ViewSwitcher
+                android:id="@+id/switcherTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:measureAllChildren="false" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="@string/textClickToView"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_def"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_interaction"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnQuickTimer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/btn_default"
+                            android:minHeight="70dp"
+                            android:minWidth="80dp"
+                            android:onClick="onClickTimerButton"
+                            android:text="@string/textStart" />
+
+                        <TimePicker
+                            android:id="@+id/timeQuickTimer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal" >
+
+                        <Button
+                            android:id="@+id/btnQuickTimer2min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/btn_default"
+                            android:minHeight="35dp"
+                            android:minWidth="40dp"
+                            android:onClick="onClickQuickTimerPreset"
+                            android:text="2m" />
+
+                        <Button
+                            android:id="@+id/btnQuickTimer10min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/btn_default"
+                            android:minHeight="35dp"
+                            android:minWidth="40dp"
+                            android:onClick="onClickQuickTimerPreset"
+                            android:text="10m" />
+
+                        <Button
+                            android:id="@+id/btnQuickTimer15min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/btn_default"
+                            android:minHeight="35dp"
+                            android:minWidth="40dp"
+                            android:onClick="onClickQuickTimerPreset"
+                            android:text="15m" />
+
+                        <Button
+                            android:id="@+id/btnQuickTimer30min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_default"
+                            android:minHeight="35dp"
+                            android:minWidth="40dp"
+                            android:onClick="onClickQuickTimerPreset"
+                            android:text="30m" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ViewSwitcher>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
